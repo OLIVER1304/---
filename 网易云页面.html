@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrop/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./1.html">
+    <link rel="stylesheet" href="./2.html">
+    <link rel="stylesheet" href="./3.html">
+    <link rel="stylesheet" href="./4.html">
+    <link rel="stylesheet" href="./5.html">
+    <link rel="stylesheet" href="./6.html">
+    <link rel="stylesheet" href="./7.html">
+    <link rel="stylesheet" href="./8.html">
+</head>
+
+<body>
+    <style>
+        @media screen and (min-width: 768px) {
+            .container {
+                height: 100%;
+            }
+            .navigator {
+                width: 100%;
+                height: 110px;
+                border: 0px solid transparent;
+            }
+            .navigator-1 {
+                background-color: #2d3436;
+                width: 100%;
+                height: 70px;
+                border: 0px solid transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            [class^=box] {
+                height: 70px;
+                border: 1px solid transparent;
+                text-align: center;
+                color: #b2bec3;
+            }
+            .navigator-1 a {
+                display: block;
+                margin: 2px auto;
+                text-align: center;
+                text-decoration: none;
+                color: #dfe6e9;
+            }
+            ul {
+                width: 380px;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                font-size: 15px;
+                width: 110px;
+                height: 30px;
+                display: inline-block;
+            }
+            .box1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                font-size: 20px;
+                padding: 0ch;
+            }
+            .box1 a {
+                line-height: 30px;
+            }
+            .box1:hover,
+            li:hover {
+                background-color: black;
+            }
+            .wrapper {
+                position: relative;
+                width: 158px;
+                float: left;
+            }
+            i {
+                margin-top: 8px;
+                margin-left: 3px;
+            }
+            i.fa {
+                position: absolute;
+            }
+            .wrapper input {
+                height: 30px;
+                width: 158px;
+                border-radius: 15px;
+                outline: none;
+                border: none;
+                margin-top: 0px;
+                padding-left: 22px;
+            }
+            .wrapper input::before {
+                display: none;
+            }
+            .box3 {
+                width: 110px;
+            }
+            .box3 a {
+                width: 90px;
+                border: 1px solid white;
+                line-height: 29px;
+                border-radius: 15px;
+                margin-top: 19px;
+            }
+            .box3 a:hover {
+                background-color: black;
+            }
+            .box4 {
+                width: 50px;
+                line-height: 70px;
+            }
+            .navigator-2 {
+                width: 100%;
+                height: 40px;
+                border: 1px solid transparent;
+                background-color: #d63031;
+            }
+            .back-rolling-picture {
+                width: 100%;
+                height: 270px;
+                background-color: #b2bec3;
+                position: relative;
+                z-index: -1;
+            }
+            .rolling-picture {
+                margin: 0px auto;
+                height: 270px;
+                width: 670px;
+                border: 3px solid pink;
+                position: relative;
+                z-index: 99;
+                display: flex;
+                padding: 0px;
+            }
+            .rolling-picture .rolling-picture-1 {
+                height: 270px;
+                width: 750px;
+                border: 1px solid greenyellow;
+            }
+            .rolling-picture .rolling-picture-2 {
+                height: 270px;
+                width: 250px;
+                border: 1px solid greenyellow;
+            }
+            .lastpicture,
+            .nextpicture {
+                width: 40px;
+                height: 70px;
+                border: 1px solid transparent;
+                position: relative;
+                z-index: 99;
+                margin-top: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .lastpicture:hover,
+            .nextpicture:hover {
+                background-color: rgb(93, 95, 93, 0.5);
+            }
+            .lastpicture i,
+            .nextpicture i {
+                margin: 0;
+                line-height: 70px;
+                color: white;
+            }
+            .lastpicture {
+                float: left;
+            }
+            .nextpicture {
+                float: right;
+            }
+            .main {
+                margin: 0 auto;
+                padding: 0px;
+                width: 670px;
+                height: 800px;
+                border: 1px solid red;
+                display: flex;
+            }
+            .main-1 {
+                height: 800px;
+                width: 750px;
+                border: 1px solid rgb(107, 5, 90);
+            }
+            .main-2 {
+                height: 800px;
+                width: 250px;
+                border: 1px solid red;
+            }
+            .main-1-1 {
+                width: 500px;
+                height: 1425px;
+                border: 1px solid gold;
+                padding: 20px 20px 40px;
+            }
+            .Popular-recommend {
+                width: 459px;
+                height: 530px;
+                border: 1px solid purple;
+            }
+            .gap {
+                width: 459px;
+                margin: 0 0 35px;
+            }
+            .new-arrival {
+                width: 459px;
+                height: 250px;
+                border: 1px solid purple;
+            }
+            .bill {
+                width: 459px;
+                height: 530px;
+                border: 1px solid purple;
+            }
+        }
+        
+        @media screen and (min-width: 1024px) {
+            ul {
+                width: 520px;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                font-size: 15px;
+                width: 80px;
+                height: 30px;
+                display: inline-block;
+            }
+        }
+        
+        @media screen and (min-width: 1900px) {
+            .container {
+                height: 100%;
+            }
+            .navigator {
+                width: 100%;
+                height: 110px;
+                border: 0px solid transparent;
+            }
+            .navigator-1 {
+                background-color: #2d3436;
+                width: 100%;
+                height: 70px;
+                border: 0px solid transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            [class^=box] {
+                height: 70px;
+                border: 1px solid transparent;
+                text-align: center;
+                color: #b2bec3;
+            }
+            .navigator-1 a {
+                display: block;
+                margin: 2px auto;
+                text-align: center;
+                text-decoration: none;
+                color: #dfe6e9;
+            }
+            .navigator-1 ul {
+                width: 700px;
+                margin: 0;
+                padding: 0;
+            }
+            .navigator-1 li {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                font-size: 15px;
+                width: 110px;
+                height: 70px;
+                line-height: 70px;
+                display: inline-block;
+            }
+            .box1 {
+                width: 200px;
+                font-size: 35px;
+                padding: 0ch;
+            }
+            .box1 a {
+                line-height: 70px;
+            }
+            .navigator-1 .box1:hover,
+            .navigator-1 li:hover {
+                background-color: black;
+            }
+            .wrapper {
+                position: relative;
+                width: 158px;
+                float: left;
+            }
+            i {
+                margin-top: 8px;
+                margin-left: 3px;
+            }
+            i.fa {
+                position: absolute;
+            }
+            .wrapper input {
+                height: 30px;
+                width: 158px;
+                border-radius: 15px;
+                outline: none;
+                border: none;
+                margin-top: 0px;
+                padding-left: 22px;
+            }
+            .wrapper input::before {
+                display: none;
+            }
+            .box3 {
+                width: 100px;
+            }
+            .box3 a {
+                width: 90px;
+                border: 1px solid white;
+                line-height: 29px;
+                border-radius: 15px;
+                margin-top: 19px;
+            }
+            .box3 a:hover {
+                background-color: black;
+            }
+            .box4 {
+                width: 50px;
+                line-height: 70px;
+            }
+            .navigator-2 {
+                width: 100%;
+                height: 40px;
+                border: 1px solid transparent;
+                background-color: #d63031;
+            }
+            .back-rolling-picture {
+                width: 100%;
+                height: 270px;
+                background-color: #b2bec3;
+                position: relative;
+                z-index: -1;
+            }
+            .rolling-picture {
+                margin: 0px auto;
+                height: 270px;
+                width: 1000px;
+                border: 3px solid pink;
+                position: relative;
+                z-index: 99;
+                display: flex;
+                padding: 0px;
+            }
+            .rolling-picture .rolling-picture-1 {
+                height: 270px;
+                width: 750px;
+                border: 1px solid greenyellow;
+            }
+            .rolling-picture .rolling-picture-2 {
+                height: 270px;
+                width: 250px;
+                border: 1px solid greenyellow;
+            }
+            .lastpicture,
+            .nextpicture {
+                width: 40px;
+                height: 70px;
+                border: 1px solid transparent;
+                position: relative;
+                z-index: 99;
+                margin-top: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .lastpicture:hover,
+            .nextpicture:hover {
+                background-color: rgb(93, 95, 93, 0.5);
+            }
+            .lastpicture i,
+            .nextpicture i {
+                margin: 0;
+                line-height: 70px;
+                color: white;
+            }
+            .lastpicture {
+                float: left;
+            }
+            .nextpicture {
+                float: right;
+            }
+            .main {
+                margin: 0 auto;
+                padding: 0px;
+                width: 1000px;
+                height: 1525px;
+                border: 1px solid red;
+                display: flex;
+            }
+            .main-1 {
+                height: 1525px;
+                width: 750px;
+                border: 1px solid rgb(107, 5, 90);
+            }
+            .main-1-1 {
+                width: 750px;
+                height: 1525px;
+                border: 1px solid gold;
+                padding: 20px 20px 40px;
+            }
+            .Popular-recommend {
+                width: 700px;
+                height: 537px;
+                border: 0px solid purple;
+            }
+            .Popular-recommend .head {
+                position: relative;
+                width: 700px;
+                height: 45px;
+                border: 3px solid #b33939;
+                border-top: 0px;
+                border-left: 0px;
+                border-right: 0px;
+                font-size: 10px;
+                text-align: center;
+            }
+            .Popular-recommend .hot {
+                float: left;
+                top: 0px;
+                height: 45px;
+                width: 120px;
+                line-height: 45px;
+                text-align: center;
+                border: 0px solid blue;
+                font-size: 20px;
+                font-weight: normal;
+            }
+            .Popular-recommend .hot a {
+                color: rgb(7, 7, 7);
+                text-decoration: none;
+                text-decoration: none;
+            }
+            .Popular-recommend .classification {
+                width: 240px;
+                height: 17px;
+                margin-top: 13px;
+                margin-left: 10px;
+                float: left;
+            }
+            .Popular-recommend .classification a {
+                line-height: 17px;
+                font-size: 12px;
+                color: #666;
+            }
+            .Popular-recommend .classification span {
+                font-size: 10px;
+                margin: 0px 10px;
+                color: #ccc;
+            }
+            .Popular-recommend .more {
+                float: right;
+                padding-right: 20px;
+                height: 45px;
+            }
+            .Popular-recommend .more a {
+                float: left;
+                margin: 14px 5px;
+                color: #666;
+                font-size: 12px;
+            }
+            .Popular-recommend .more i {
+                float: left;
+                margin: 16px 0px;
+            }
+            .Popular-recommend .content {
+                margin-top: 20px;
+                width: 700px;
+                height: 470px;
+                border: 0px solid rosybrown;
+            }
+            .Popular-recommend .content ul {
+                width: 700px;
+            }
+            .Popular-recommend li {
+                width: 141px;
+                height: 204px;
+                border: 0px solid purple;
+                margin-top: 20px;
+                margin-left: 24px;
+            }
+            .Popular-recommend li:hover {
+                background-color: transparent;
+            }
+            .Popular-recommend .picture {
+                position: relative;
+                height: 140px;
+            }
+            .Popular-recommend .picture .a1 {
+                width: 140px;
+                line-height: 140px;
+            }
+            .Popular-recommend .bottom {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 25px;
+                width: 100%;
+                background-color: rgb(54, 51, 51, 0.5);
+                color: #dfe6e9;
+            }
+            .Popular-recommend .bottom .a2,
+            .Popular-recommend .bottom span {
+                border: 0px solid pink;
+                margin: 5px 5px;
+            }
+            .Popular-recommend .bottom a {
+                text-decoration: none;
+                color: #dfe6e9;
+                float: right;
+                margin: 5px 5px;
+            }
+            .Popular-recommend .dec a {
+                padding: 3px 5px;
+                font-size: 13px;
+                display: flex;
+                color: black;
+            }
+            .gap {
+                width: 700px;
+                margin: 0 0 35px;
+            }
+            .new-arrival {
+                width: 700px;
+                height: 270px;
+                border: 0px solid purple;
+            }
+            .new-arrival .head {
+                position: relative;
+                width: 700px;
+                height: 45px;
+                border: 3px solid #b33939;
+                border-top: 0px;
+                border-left: 0px;
+                border-right: 0px;
+                font-size: 10px;
+                text-align: center;
+            }
+            .new-arrival .head .new {
+                float: left;
+                top: 0px;
+                height: 45px;
+                width: 120px;
+                line-height: 45px;
+                text-align: center;
+                border: 0px solid blue;
+                font-size: 20px;
+                font-weight: normal;
+            }
+            .new-arrival .head .new a {
+                color: rgb(7, 7, 7);
+                text-decoration: none;
+                text-decoration: none;
+            }
+            .new-arrival .head .more {
+                float: right;
+                padding-right: 20px;
+                height: 45px;
+            }
+            .new-arrival .head .more a {
+                float: left;
+                margin: 14px 5px;
+                color: #666;
+                font-size: 12px;
+            }
+            .new-arrival .head .more i {
+                float: left;
+                margin: 16px 0px;
+            }
+            .new-arrival .content {
+                margin-top: 30px;
+                width: 700px;
+                height: 190px;
+                border: 0px solid rosybrown;
+            }
+            .new-arrival .content .last,
+            .new-arrival .content .next {
+                width: 20px;
+                height: 55px;
+                border: 1px solid transparent;
+                position: relative;
+                z-index: 99;
+                margin-top: 65px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .new-arrival .content .last:hover,
+            .new-arrival .content .next:hover {
+                background-color: rgb(93, 95, 93, 0.5);
+            }
+            .new-arrival .content .last i,
+            .new-arrival .content .next i {
+                margin: 0;
+                line-height: 70px;
+                color: gray;
+            }
+            .new-arrival .content .last {
+                float: left;
+            }
+            .new-arrival .content .next {
+                float: right;
+            }
+            .new-arrival .content .content-1 {
+                float: left;
+                margin: 20px 3px;
+                width: 650px;
+                height: 150px;
+                border: 1px solid rosybrown;
+            }
+            .bill {
+                width: 700px;
+                height: 555px;
+                border: 0px solid purple;
+            }
+            .bill .head {
+                position: relative;
+                width: 700px;
+                height: 45px;
+                border: 3px solid #b33939;
+                border-top: 0px;
+                border-left: 0px;
+                border-right: 0px;
+                font-size: 10px;
+                text-align: center;
+            }
+            .bill .head .billboard {
+                float: left;
+                top: 0px;
+                height: 45px;
+                width: 80px;
+                line-height: 45px;
+                text-align: center;
+                border: 0px solid blue;
+                font-size: 20px;
+                font-weight: normal;
+            }
+            .bill .head .billboard a {
+                color: rgb(7, 7, 7);
+                text-decoration: none;
+                text-decoration: none;
+            }
+            .bill .head .more {
+                float: right;
+                padding-right: 20px;
+                height: 45px;
+            }
+            .bill .head .more a {
+                float: left;
+                margin: 14px 5px;
+                color: #666;
+                font-size: 12px;
+            }
+            .bill .head .more i {
+                float: left;
+                margin: 16px 0px;
+            }
+            .bill .content {
+                margin-top: 30px;
+                width: 700px;
+                height: 480px;
+                border: 0px solid rosybrown;
+            }
+            .bill .content dl {
+                border: 1px solid blue;
+                float: left;
+                height: 482px;
+                width: 233px;
+            }
+            .bill .content dl dt {
+                border: 1px solid greenyellow;
+                height: 120px;
+                width: 100%;
+            }
+            .bill .content dl ol {
+                padding: 0px;
+                list-style: none;
+            }
+            .bill .content dl li {
+                height: 33px;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                border: 1px solid rgb(9, 123, 158);
+                display: flex;
+            }
+            .bill .content dl li:hover {
+                background: transparent
+            }
+            .main-2 {
+                height: 1525px;
+                width: 250px;
+                border: 1px solid red;
+            }
+        }
+    </style>
+
+    <div class="navigator">
+        <div class="navigator-1">
+            <div class="box1">
+                <a href="">网易云音乐</a>
+            </div>
+            <ul>
+                <li class=""><a href="">发现音乐</a></li>
+                <li class=""><a href="">我的音乐</a></li>
+                <li class=""><a href="">朋友</a></li>
+                <li class=""><a href="">商城</a></li>
+                <li class=""><a href="">音乐人</a></li>
+                <li class=""><a href="">下载客户端</a></li>
+            </ul>
+            <div class="wrapper">
+                <i class="fa fa-search fa-lg"></i>
+                <input type="text" placeholder="音乐/视频/电台/用户">
+            </div>
+            <div class="box3">
+                <a href="">创作者中心</a>
+            </div>
+            <div class="box4">
+                <a href="">登录</a>
+            </div>
+        </div>
+        <div class="navigator-2"></div>
+        <div class="back-rolling-picture"></div>
+    </div>
+    <div class="container ">
+        <div class="row">
+            <div class="">
+                <div class="lastpicture">
+                    <i class="fa fa-angle-left fa-3x"></i>
+                </div>
+                <div class="nextpicture">
+                    <i class="fa fa-angle-right fa-3x"></i>
+                </div>
+                <div class="rolling-picture">
+                    <span class="rolling-picture-1"></span>
+                    <span class="rolling-picture-2"></span>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-1">
+                    <div class="main-1-1">
+                        <div class="Popular-recommend">
+                            <div class="head">
+                                <div class="hot fa fa-circle-o">
+                                    <a href="">热门推荐</a></div>
+                                <div class="classification">
+                                    <a href="">华语</a>
+                                    <span>|</span>
+                                    <a href="">流行</a>
+                                    <span>|</span>
+                                    <a href="">摇滚</a>
+                                    <span>|</span>
+                                    <a href="">民谣</a>
+                                    <span>|</span>
+                                    <a href="">电子</a>
+                                </div>
+                                <span class="more">
+                                    <a href="">更多</a>
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </span>
+                            </div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <div class="picture">
+                                            <a class="a1" href="1.html"><img src="https://p2.music.126.net/eibWvYVwdugZVQN1zNjdAQ==/109951165567203503.jpg?param=140y140" alt=""></a>
+                                            <div class="bottom">
+                                                <span class="a2 fa fa-headphones fa-lg"></span>
+                                                <span><p style="display: inline-block;">43758万</p></span>
+                                                <a class="fa fa-play-circle-o fa-lg" href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dec">
+                                            <p><a href="1.html">[一周新歌推荐] 吴青峰搭档李乐祺献唱电影《崖上的波妞》</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="picture">
+                                            <a class="a1" href="2.html"><img src="https://p2.music.126.net/9FNt-TbuSEc4J80dyGa0WQ==/109951165467478326.jpg?param=140y140" alt=""></a>
+                                            <div class="bottom">
+                                                <span class="a2 fa fa-headphones fa-lg"></span>
+                                                <span><p style="display: inline-block;">43758万</p></span>
+                                                <a class="fa fa-play-circle-o fa-lg" href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dec">
+                                            <p><a href="2.html">星光不负赶路人，我们一研为定！</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="picture">
+                                            <a class="a1" href="3.html"><img src="https://p2.music.126.net/HS7_TXqxk_OmQ5QQaD-7TQ==/109951165499870719.jpg?param=140y140" alt=""></a>
+                                            <div class="bottom">
+                                                <span class="a2 fa fa-headphones fa-lg"></span>
+                                                <span><p style="display: inline-block;">43758万</p></span>
+                                                <a class="fa fa-play-circle-o fa-lg" href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dec">
+                                            <p><a href="3.html">干嘛听苦情歌以为多浪漫</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="picture">
+                                            <a class="a1" href="4.html"><img src="https://p2.music.126.net/chKxFKqXtjLOU_q9-bQxhA==/109951165547360602.jpg?param=140y140" alt=""></a>
+                                            <div class="bottom">
+                                                <span class="a2 fa fa-headphones fa-lg"></span>
+                                                <span><p style="display: inline-block;">43758万</p></span>
+                                                <a class="fa fa-play-circle-o fa-lg" href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dec">
+                                            <p><a href="4.html">“讨厌平凡，归于平凡”</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="picture">
+                                            <a class="a1" href="5.html"><img src="https://p2.music.126.net/M8UN6BQjXpsrJjUwhqxdcg==/109951165554766723.jpg?param=140y140" alt=""></a>
+                                            <div class="bottom">
+                                                <span class="a2 fa fa-headphones fa-lg"></span>
+                                                <span><p style="display: inline-block;">43758万</p></span>
+                                                <a class="fa fa-play-circle-o fa-lg" href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dec">
+                                            <p><a href="5.html">学会释怀，对回忆放手，和遗憾和解</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="picture">
+                                            <a class="a1" href="6.html"><img src="https://p2.music.126.net/lxscOFxNDaBsi3IpKCiy5A==/109951165554013871.jpg?param=140y140" alt=""></a>
+                                            <div class="bottom">
+                                                <span class="a2 fa fa-headphones fa-lg"></span>
+                                                <span><p style="display: inline-block;">43758万</p></span>
+                                                <a class="fa fa-play-circle-o fa-lg" href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dec">
+                                            <p><a href="6.html">为什么全新全意的付出却总是被辜负呢</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="picture">
+                                            <a class="a1" href="7.html"><img src="https://p2.music.126.net/Hr8sEJzhAKvKo8x56n-Yhw==/109951165525778915.jpg?param=140y140" alt=""></a>
+                                            <div class="bottom">
+                                                <span class="a2 fa fa-headphones fa-lg"></span>
+                                                <span><p style="display: inline-block;">43758万</p></span>
+                                                <a class="fa fa-play-circle-o fa-lg" href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dec">
+                                            <p><a href="7.html">一秒沉醉 • 欧美迷情仙女嗓</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="picture">
+                                            <a class="a1" href="8.html"><img src="https://p2.music.126.net/Uq2Ov2LmT50GhwY_jh416A==/109951165552535634.jpg?param=140y140" alt=""></a>
+                                            <div class="bottom">
+                                                <span class="a2 fa fa-headphones fa-lg"></span>
+                                                <span><p style="display: inline-block;">43758万</p></span>
+                                                <a class="fa fa-play-circle-o fa-lg" href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="dec">
+                                            <p><a href="8.html">难生恨</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gap"></div>
+                        <div class="new-arrival">
+                            <div class="head">
+                                <div class="new fa fa-circle-o">
+                                    <a href="">新碟上架</a></div>
+                                <span class="more">
+                                    <a href="">更多</a>
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="last">
+                                    <i class="fa fa-angle-left fa-3x"></i>
+                                </div>
+                                <div class="content-1">
+
+                                </div>
+                                <div class="next">
+                                    <i class="fa fa-angle-right fa-3x"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap"></div>
+                        <div class="bill">
+                            <div class="head">
+                                <div class="billboard fa fa-circle-o">
+                                    <a href="">榜单</a></div>
+                                <span class="more">
+                                    <a href="">更多</a>
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </span>
+                            </div>
+                            <div class="content">
+                                <dl class="dl-1">
+                                    <dt></dt>
+                                    <ol>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </dl>
+                                <dl class="dl-2"> <dt></dt>
+                                    <ol>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </dl>
+                                <dl class="dl-3"> <dt></dt>
+                                    <ol>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
