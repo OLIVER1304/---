@@ -19,232 +19,9 @@
 
 <body>
     <style>
-        @media screen and (min-width: 768px) {
-            .container {
-                height: 100%;
-            }
-            .navigator {
-                width: 100%;
-                height: 110px;
-                border: 0px solid transparent;
-            }
-            .navigator-1 {
-                background-color: #2d3436;
-                width: 100%;
-                height: 70px;
-                border: 0px solid transparent;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            [class^=box] {
-                height: 70px;
-                border: 1px solid transparent;
-                text-align: center;
-                color: #b2bec3;
-            }
-            .navigator-1 a {
-                display: block;
-                margin: 2px auto;
-                text-align: center;
-                text-decoration: none;
-                color: #dfe6e9;
-            }
-            ul {
-                width: 380px;
-                margin: 0;
-                padding: 0;
-            }
-            li {
-                list-style: none;
-                margin: 0px;
-                padding: 0px;
-                font-size: 15px;
-                width: 110px;
-                height: 30px;
-                display: inline-block;
-            }
-            .box1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 120px;
-                font-size: 20px;
-                padding: 0ch;
-            }
-            .box1 a {
-                line-height: 30px;
-            }
-            .box1:hover,
-            li:hover {
-                background-color: black;
-            }
-            .wrapper {
-                position: relative;
-                width: 158px;
-                float: left;
-            }
-            i {
-                margin-top: 8px;
-                margin-left: 3px;
-            }
-            i.fa {
-                position: absolute;
-            }
-            .wrapper input {
-                height: 30px;
-                width: 158px;
-                border-radius: 15px;
-                outline: none;
-                border: none;
-                margin-top: 0px;
-                padding-left: 22px;
-            }
-            .wrapper input::before {
-                display: none;
-            }
-            .box3 {
-                width: 110px;
-            }
-            .box3 a {
-                width: 90px;
-                border: 1px solid white;
-                line-height: 29px;
-                border-radius: 15px;
-                margin-top: 19px;
-            }
-            .box3 a:hover {
-                background-color: black;
-            }
-            .box4 {
-                width: 50px;
-                line-height: 70px;
-            }
-            .navigator-2 {
-                width: 100%;
-                height: 40px;
-                border: 1px solid transparent;
-                background-color: #d63031;
-            }
-            .back-rolling-picture {
-                width: 100%;
-                height: 270px;
-                background-color: #b2bec3;
-                position: relative;
-                z-index: -1;
-            }
-            .rolling-picture {
-                margin: 0px auto;
-                height: 270px;
-                width: 670px;
-                border: 3px solid pink;
-                position: relative;
-                z-index: 99;
-                display: flex;
-                padding: 0px;
-            }
-            .rolling-picture .rolling-picture-1 {
-                height: 270px;
-                width: 750px;
-                border: 1px solid greenyellow;
-            }
-            .rolling-picture .rolling-picture-2 {
-                height: 270px;
-                width: 250px;
-                border: 1px solid greenyellow;
-            }
-            .lastpicture,
-            .nextpicture {
-                width: 40px;
-                height: 70px;
-                border: 1px solid transparent;
-                position: relative;
-                z-index: 99;
-                margin-top: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .lastpicture:hover,
-            .nextpicture:hover {
-                background-color: rgb(93, 95, 93, 0.5);
-            }
-            .lastpicture i,
-            .nextpicture i {
-                margin: 0;
-                line-height: 70px;
-                color: white;
-            }
-            .lastpicture {
-                float: left;
-            }
-            .nextpicture {
-                float: right;
-            }
-            .main {
-                margin: 0 auto;
-                padding: 0px;
-                width: 670px;
-                height: 800px;
-                border: 1px solid red;
-                display: flex;
-            }
-            .main-1 {
-                height: 800px;
-                width: 750px;
-                border: 1px solid rgb(107, 5, 90);
-            }
-            .main-2 {
-                height: 800px;
-                width: 250px;
-                border: 1px solid red;
-            }
-            .main-1-1 {
-                width: 500px;
-                height: 1425px;
-                border: 1px solid gold;
-                padding: 20px 20px 40px;
-            }
-            .Popular-recommend {
-                width: 459px;
-                height: 530px;
-                border: 1px solid purple;
-            }
-            .gap {
-                width: 459px;
-                margin: 0 0 35px;
-            }
-            .new-arrival {
-                width: 459px;
-                height: 250px;
-                border: 1px solid purple;
-            }
-            .bill {
-                width: 459px;
-                height: 530px;
-                border: 1px solid purple;
-            }
-        }
-        
-        @media screen and (min-width: 1024px) {
-            ul {
-                width: 520px;
-                margin: 0;
-                padding: 0;
-            }
-            li {
-                list-style: none;
-                margin: 0px;
-                padding: 0px;
-                font-size: 15px;
-                width: 80px;
-                height: 30px;
-                display: inline-block;
-            }
-        }
-        
         @media screen and (min-width: 1900px) {
             .container {
+                width: 1100px;
                 height: 100%;
             }
             .navigator {
@@ -305,6 +82,7 @@
                 position: relative;
                 width: 158px;
                 float: left;
+                font-size: 12px;
             }
             i {
                 margin-top: 8px;
@@ -334,6 +112,7 @@
                 line-height: 29px;
                 border-radius: 15px;
                 margin-top: 19px;
+                font-size: 13px;
             }
             .box3 a:hover {
                 background-color: black;
@@ -348,6 +127,9 @@
                 border: 1px solid transparent;
                 background-color: #d63031;
             }
+            .wrap {
+                position: relative;
+            }
             .back-rolling-picture {
                 width: 100%;
                 height: 270px;
@@ -359,7 +141,7 @@
                 margin: 0px auto;
                 height: 270px;
                 width: 1000px;
-                border: 3px solid pink;
+                border: 0px solid pink;
                 position: relative;
                 z-index: 99;
                 display: flex;
@@ -368,40 +150,68 @@
             .rolling-picture .rolling-picture-1 {
                 height: 270px;
                 width: 750px;
-                border: 1px solid greenyellow;
+                border: 0px solid greenyellow;
+            }
+            .item {
+                width: 750px;
+                height: 270px;
+                position: absolute;
+            }
+            .active {
+                z-index: 10;
+            }
+            .rolling-picture .rolling-picture-1 ul {
+                z-index: 100;
+                position: absolute;
+                margin-bottom: 0px;
+                padding-left: 0px;
+                bottom: 10px;
+                left: 325px;
+                list-style: none;
+            }
+            .rolling-picture .rolling-picture-1 .point {
+                background: rgb(0, 0, 0, 0.4);
+                height: 10px;
+                width: 10px;
+                border-radius: 100%;
+                float: left;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .rolling-picture .rolling-picture-1 ul .active {
+                background: rgb(0, 0, 0, 1);
             }
             .rolling-picture .rolling-picture-2 {
                 height: 270px;
                 width: 250px;
                 border: 1px solid greenyellow;
             }
-            .lastpicture,
-            .nextpicture {
+            .wrap .btn {
                 width: 40px;
                 height: 70px;
-                border: 1px solid transparent;
-                position: relative;
-                z-index: 99;
-                margin-top: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                top: 100px;
+                position: absolute;
+                border-radius: 0px;
+                padding: 0ch;
+                background-color: transparent;
             }
-            .lastpicture:hover,
-            .nextpicture:hover {
+            #gopre {
+                left: 0px;
+                outline: none;
+            }
+            #gonext {
+                right: 0px;
+                outline: none;
+            }
+            .wrap .btn:hover {
                 background-color: rgb(93, 95, 93, 0.5);
             }
-            .lastpicture i,
-            .nextpicture i {
+            .wrap .btn i {
                 margin: 0;
-                line-height: 70px;
+                line-height: 0px;
+                left: 11px;
                 color: white;
-            }
-            .lastpicture {
-                float: left;
-            }
-            .nextpicture {
-                float: right;
+                position: absolute;
             }
             .main {
                 margin: 0 auto;
@@ -494,11 +304,18 @@
             }
             .Popular-recommend .content ul {
                 width: 700px;
+                margin: 0;
+                padding: 0;
             }
             .Popular-recommend li {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                font-size: 10px;
                 width: 141px;
                 height: 204px;
-                border: 0px solid purple;
+                display: inline-block;
+                text-align: center;
                 margin-top: 20px;
                 margin-left: 24px;
             }
@@ -507,6 +324,11 @@
             }
             .Popular-recommend .picture {
                 position: relative;
+                height: 140px;
+                width: 140px;
+            }
+            .Popular-recommend .picture img {
+                width: 140px;
                 height: 140px;
             }
             .Popular-recommend .picture .a1 {
@@ -518,14 +340,20 @@
                 left: 0;
                 bottom: 0;
                 height: 25px;
-                width: 100%;
+                width: 140px;
                 background-color: rgb(54, 51, 51, 0.5);
                 color: #dfe6e9;
+            }
+            .Popular-recommend .bottom .fa-lg {
+                width: 15px;
             }
             .Popular-recommend .bottom .a2,
             .Popular-recommend .bottom span {
                 border: 0px solid pink;
                 margin: 5px 5px;
+            }
+            .Popular-recommend .bottom span p {
+                font-size: 13px;
             }
             .Popular-recommend .bottom a {
                 text-decoration: none;
@@ -680,35 +508,106 @@
             }
             .bill .content {
                 margin-top: 30px;
+                margin-left: 6px;
                 width: 700px;
                 height: 480px;
                 border: 0px solid rosybrown;
+                background: url(index_bill.png);
+                background-repeat: no-repeat;
             }
             .bill .content dl {
-                border: 1px solid blue;
+                border: 0px solid blue;
                 float: left;
-                height: 482px;
-                width: 233px;
+                height: 475px;
+                width: 230px;
             }
             .bill .content dl dt {
-                border: 1px solid greenyellow;
+                border: 0px solid greenyellow;
                 height: 120px;
                 width: 100%;
+                padding-left: 20px;
+                padding-top: 20px;
+                display: flex;
+            }
+            .bill .content .bill-1 {
+                width: 80px;
+                height: 80px;
+                border: 0px solid black;
+                position: relative;
+            }
+            .bill .content .bill-1 img {
+                width: 80px;
+                height: 80px;
+            }
+            .bill .content .bill-1 a {
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .bill .content .bill-a {
+                width: 116px;
+                height: 50px;
+                border: 0px solid black;
+                margin-left: 8px;
+                margin-top: 8px;
+            }
+            .bill .content .bill-a h5 {
+                margin: 0;
+                color: black;
+                padding-left: 6px;
+            }
+            .bill .content .bill-a a {
+                margin: 0;
+            }
+            .bill .content .bill-a .btn {
+                padding: 0;
+                margin-top: 10px;
+                outline: none;
+            }
+            .bill .content .bill-a .btn a {
+                margin: 1px 4px;
+                color: #b2bec3;
+                text-decoration: none;
+            }
+            .bill .content .bill-a .btn a:hover {
+                color: #666;
             }
             .bill .content dl ol {
-                padding: 0px;
                 list-style: none;
+                padding: 0;
+                height: 319px;
+                margin-left: 50px;
+                line-height: 32px;
             }
             .bill .content dl li {
-                height: 33px;
-                width: 100%;
-                margin: 0px;
+                height: 32px;
+                width: 180px;
+                margin-right: 0px;
                 padding: 0px;
-                border: 1px solid rgb(9, 123, 158);
-                display: flex;
+                border: 0px solid rgb(9, 123, 158);
+                float: right;
             }
             .bill .content dl li:hover {
                 background: transparent
+            }
+            .bill .content dl li span {
+                width: 35px;
+                height: 32px;
+                font-size: 18px;
+                font-weight: 400;
+                text-align: center;
+                margin-left: -32px;
+            }
+            .bill .content dl li .top3 {
+                color: #c23616;
+                float: left;
+                margin-left: -45px;
+            }
+            .bill .content dl li a {
+                width: 180px;
+                height: 32px;
             }
             .main-2 {
                 height: 1525px;
@@ -747,15 +646,77 @@
     </div>
     <div class="container ">
         <div class="row">
-            <div class="">
-                <div class="lastpicture">
+            <div class="wrap">
+                <button class="btn" id="gopre">
                     <i class="fa fa-angle-left fa-3x"></i>
-                </div>
-                <div class="nextpicture">
+                </button>
+                <button class="btn" id="gonext">
                     <i class="fa fa-angle-right fa-3x"></i>
-                </div>
+                </button>
                 <div class="rolling-picture">
-                    <span class="rolling-picture-1"></span>
+                    <span class="rolling-picture-1">
+                        <img src="http://p1.music.126.net/gsiYyYYdShZt-J1m2Wsxvw==/109951165632665394.jpg?imageView&quality=89" class="item active" alt="">
+                        <img src="http://p1.music.126.net/jyILGv_y141AKY27MMsfeA==/109951165632696947.jpg?imageView&quality=89" class="item" alt="">
+                        <img src="http://p1.music.126.net/ccWzJ1ST5oxErfHLCf3wvQ==/109951165632446364.jpg?imageView&quality=89" class="item" alt="">
+                        <img src="http://p1.music.126.net/j0bJNA7bNfX81KEYtx-sCA==/109951165629510356.jpg?imageView&quality=89" class="item" alt="">
+                        <img src="http://p1.music.126.net/hjzke-VUFqkY8sbOyEVsiA==/109951165634622256.jpg?imageView&quality=89" class="item" alt="">
+                        <ul>
+                            <li class="point active" data-index="0"></li>
+                            <li class="point" data-index="1"></li>
+                            <li class="point" data-index="2"></li>
+                            <li class="point" data-index="3"></li>
+                            <li class="point" data-index="4"></li>
+                        </ul>
+                    </span>
+                    <script>
+                        var items = document.getElementsByClassName('item');
+                        var point = document.getElementsByClassName('point');
+                        var goprebtn = document.getElementById('gopre');
+                        var gonextbtn = document.getElementById('gonext');
+                        var index = 0;
+                        var clearactive = function() {
+                            for (var i = 0; i < items.length; i++) {
+                                items[i].className = 'item';
+                            }
+                            for (var i = 0; i < point.length; i++) {
+                                point[i].className = 'point';
+                            }
+                        }
+                        var goindex = function() {
+                            clearactive();
+                            point[index].className = 'point active';
+                            items[index].className = 'item active';
+                        }
+                        var gonext = function() {
+                            if (index < 4) {
+                                index++;
+                            } else {
+                                index = 0;
+                            }
+                            goindex();
+                        }
+                        var gopre = function() {
+                            if (index > 0) {
+                                index--;
+                            } else {
+                                index = 4;
+                            }
+                            goindex();
+                        }
+                        goprebtn.addEventListener('click', function() {
+                            gopre();
+                        })
+                        gonextbtn.addEventListener('click', function() {
+                            gonext();
+                        })
+                        for (var i = 0; i < point.length; i++) {
+                            point[i].addEventListener('click', function() {
+                                var pointindex = this.getAttribute('data-index');
+                                index = pointindex;
+                                goindex();
+                            })
+                        }
+                    </script>
                     <span class="rolling-picture-2"></span>
                 </div>
             </div>
@@ -925,49 +886,164 @@
                             </div>
                             <div class="content">
                                 <dl class="dl-1">
-                                    <dt></dt>
+                                    <dt>
+                                        <div class="bill-1">
+                                            <img src="https://p3.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100" alt="">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="bill-a">
+                                            <a href=""><h5>飙升榜</h5></a>
+                                            <div class="btn">
+                                                <a class="fa fa-play-circle-o fa-2x" href=""></a>
+                                                <a class="fa fa-file-audio-o fa-2x" href=""></a>
+                                            </div>
+                                        </div>
+                                    </dt>
                                     <ol>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>
+                                            <span class="top3">1</span>
+                                            <a href=""></a>
+                                            <div class="oper">
+                                                <a class="" href=""></a>
+                                                <a class="" href=""></a>
+                                                <a href=""></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="top3">2</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span class="top3">3</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span>4</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span>5</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>6</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>7</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>8</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>9</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>10</span>
+                                            <a href=""></a>
+                                        </li>
                                     </ol>
                                 </dl>
-                                <dl class="dl-2"> <dt></dt>
+                                <dl class="dl-2">
+                                    <dt>
+                                        <div class="bill-1">
+                                           <img src="https://p3.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=100y100" alt="">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="bill-a">
+                                            <a href=""><h5>新歌榜</h5></a>
+                                            <div class="btn">
+                                                <a class="fa fa-play-circle-o fa-2x" href=""></a>
+                                                <a class="fa fa-file-audio-o fa-2x" href=""></a>
+                                            </div>
+                                        </div>
+                                    </dt>
                                     <ol>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>
+                                            <span class="top3">1</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span class="top3">2</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span class="top3">3</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span>4</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span>5</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>6</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>7</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>8</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>9</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>10</span>
+                                            <a href=""></a>
+                                        </li>
                                     </ol>
                                 </dl>
-                                <dl class="dl-3"> <dt></dt>
+                                <dl class="dl-3">
+                                    <dt>
+                                        <div class="bill-1">
+                                            <img src="https://p4.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=100y100" alt="">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="bill-a">
+                                            <a href=""><h5>原创榜</h5></a>
+                                            <div class="btn">
+                                                <a class="fa fa-play-circle-o fa-2x" href=""></a>
+                                                <a class="fa fa-file-audio-o fa-2x" href=""></a>
+                                            </div>
+                                        </div>
+                                    </dt>
                                     <ol>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>
+                                            <span class="top3">1</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span class="top3">2</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span class="top3">3</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span>4</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li>
+                                            <span>5</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>6</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>7</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>8</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>9</span>
+                                            <a href=""></a>
+                                        </li>
+                                        <li><span>10</span>
+                                            <a href=""></a>
+                                        </li>
                                     </ol>
                                 </dl>
                             </div>
