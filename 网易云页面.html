@@ -220,12 +220,16 @@
                 width: 250px;
                 background: url(download1.jpg);
             }
-            .rolling-picture .rolling-picture-2 a {
+            .rolling-picture .rolling-picture-2 .download {
                 width: 250px;
                 height: 56px;
                 display: block;
-                margin-top: 186px;
-                margin-left: 20px;
+                margin-top: 185px;
+                margin-left: 19px;
+            }
+            .rolling-picture .rolling-picture-2 .download:hover {
+                background-image: url(download2.jpg);
+                background-repeat: no-repeat;
             }
             .wrap .btn {
                 width: 40px;
@@ -259,18 +263,18 @@
                 padding: 0px;
                 width: 1000px;
                 height: 1525px;
-                border: 1px solid red;
                 display: flex;
             }
             .main-1 {
                 height: 1525px;
                 width: 750px;
-                border: 1px solid rgb(107, 5, 90);
+                border: 0.5px solid gray;
+                border-top: none;
+                border-bottom: none;
             }
             .main-1-1 {
                 width: 750px;
                 height: 1525px;
-                border: 1px solid gold;
                 padding: 20px 20px 40px;
             }
             .Popular-recommend {
@@ -282,7 +286,7 @@
                 position: relative;
                 width: 700px;
                 height: 45px;
-                border: 3px solid #b33939;
+                border: 2px solid #b33939;
                 border-top: 0px;
                 border-left: 0px;
                 border-right: 0px;
@@ -421,7 +425,7 @@
                 position: relative;
                 width: 700px;
                 height: 45px;
-                border: 3px solid #b33939;
+                border: 2px solid #b33939;
                 border-top: 0px;
                 border-left: 0px;
                 border-right: 0px;
@@ -509,7 +513,7 @@
                 position: relative;
                 width: 700px;
                 height: 45px;
-                border: 3px solid #b33939;
+                border: 2px solid #b33939;
                 border-top: 0px;
                 border-left: 0px;
                 border-right: 0px;
@@ -653,7 +657,109 @@
             .main-2 {
                 height: 1525px;
                 width: 250px;
-                border: 1px solid red;
+                border: 0.5px solid gray;
+                border-left: none;
+                border-top: none;
+                border-bottom: none;
+            }
+            .main-2 .user-profile {
+                width: 248px;
+                height: 126px;
+                background-image: url(index.png);
+                background-repeat: no-repeat;
+            }
+            .main-2 .user-profile p {
+                padding: 16px 0 16px 0;
+                margin: 0 20px 0 20px;
+                font-size: 12px;
+                line-height: 22px;
+            }
+            .main-2 .login {
+                display: block;
+                width: 100px;
+                height: 31px;
+                margin: 0 auto;
+                text-align: center;
+                background-image: url(index.png);
+                background-repeat: no-repeat;
+                background-position: 0 -195px;
+                text-decoration: none;
+                color: #fff;
+                line-height: 31px;
+                font-size: 12px;
+            }
+            .main-2 .login:hover {
+                background-image: url(index.png);
+                background-repeat: no-repeat;
+                background-position: -110px -195px;
+            }
+            .main-2 .singer {
+                margin-top: 20px;
+                height: 455px;
+                width: 250px;
+            }
+            .main-2 .singer .head,
+            .main-2 .dj .head {
+                height: 24px;
+                margin: 0 20px;
+                position: relative;
+                border-bottom: 1px solid #ccc;
+            }
+            .main-2 .singer .head span,
+            .main-2 .dj .head span {
+                position: absolute;
+                left: 0;
+                font-size: 12px;
+                font-weight: bolder;
+            }
+            .main-2 .singer .head a,
+            .main-2 .dj .head a {
+                position: absolute;
+                right: 0;
+                font-size: 12px;
+                text-decoration: none;
+                color: #787878;
+            }
+            .main-2 .singer ul,
+            .main-2 .dj ul {
+                list-style: none;
+                padding: 0;
+                margin: 6px 0 14px 20px;
+            }
+            .main-2 .singer li {
+                float: left;
+                width: 210px;
+                height: 62px;
+                background: #fafafa;
+                margin-top: 14px;
+            }
+            .main-2 .singer li a {
+                display: block;
+                height: 62px;
+                width: 210px;
+            }
+            .main-2 .singer ul a span:nth-child(1) {
+                float: left;
+            }
+            .main-2 .singer ul a span:nth-child(2) {
+                float: left;
+                color: #787878;
+                padding-left: 15px;
+            }
+            .main-2 .singer ul a h5 {
+                font-weight: bolder;
+            }
+            .main-2 .singer ul a span:nth-child(2) p {
+                font-size: 12px;
+                width: 90%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .main-2 .dj li {
+                float: left;
+                width: 210px;
+                height: 50px;
             }
         }
     </style>
@@ -768,7 +874,7 @@
                         }
                     </script>
                     <span class="rolling-picture-2">
-                        <a href=""><img src="download2.jpg" alt=""></a>
+                        <a class="download" href=""></a>
                     </span>
                 </div>
             </div>
@@ -1102,7 +1208,97 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-2"></div>
+                <div class="main-2">
+                    <div class="user-profile">
+                        <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                        <a class="login" href="">用户登录</a>
+                    </div>
+                    <div class="singer">
+                        <h3 class="head">
+                            <span>入驻歌手</span>
+                            <a href="">查看全部></a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt=""></span>
+                                    <span>
+                                        <h5>张惠妹aMEI</h5>
+                                        <p>台湾歌手张惠妹</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/1EN_iqQWU_E3DafzEOh3cA==/3302932937408956.jpg?param=62y62" alt=""></span>
+                                    <span>
+                                        <h5>Fine乐团</h5>
+                                        <p>独立音乐人</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/ZuktZvjcxpYBjcWC3gmbPg==/19027048718765608.jpg?param=62y62" alt=""></span>
+                                    <span>
+                                        <h5>萬曉利</h5>
+                                        <p>民谣歌手、中国现代民谣</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/v_zYgE9kmAwVGWV2c8hFxA==/7943971513291094.jpg?param=62y62" alt=""></span>
+                                    <span>
+                                        <h5>音乐人赵雷</h5>
+                                        <p>民谣歌手</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/6wPGl_ddgAbJTx5kOohcyw==/109951163892302996.jpg?param=62y62" alt=""></span>
+                                    <span>
+                                        <h5>王三溥</h5>
+                                        <p>音乐人</p>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dj">
+                        <h3 class="head">
+                            <span>热门主播</span>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" alt=""></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/y5-sM7tjnxnu_V9LWKgZlw==/7942872001461517.jpg?param=40y40" alt=""></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/6cc6lgOfQTo6ovNnTHPyJg==/3427177769086282.jpg?param=40y40" alt=""></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/xa1Uxrrn4J0pm_PJwkGYvw==/3130309604335651.jpg?param=40y40" alt=""></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><img src="http://p2.music.126.net/slpd09Tf5Ju82Mv-h8MP4w==/3440371884651965.jpg?param=40y40" alt=""></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
