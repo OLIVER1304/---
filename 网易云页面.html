@@ -206,11 +206,92 @@
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
             }
+            .dl .content .f-cb {
+                width: 100%;
+                height: 85%;
+                padding: 20px 0px;
+            }
+            .dl .content .phone {
+                float: left;
+                margin-left: 101px;
+                width: 125px;
+                height: 220px;
+                background-image: url(qr_guide.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .dl .content .qr {
+                height: 220px;
+                width: 150px;
+                float: left;
+                margin-left: 40px;
+                border: 0.5px solid pink;
+            }
+            .dl .content .otherway {
+                width: 120px;
+                height: 30px;
+                margin: 0 auto;
+                border: 1px solid grey;
+                border-radius: 20px;
+            }
+            .dl .content .otherway a {
+                display: block;
+                width: 120px;
+                height: 30px;
+                color: black;
+                text-decoration: none;
+                font-size: 12px;
+                text-align: center;
+                line-height: 28px;
+            }
             .navigator-2 {
                 width: 100%;
                 height: 35px;
-                border: 1px solid transparent;
                 background-color: #C20C0C;
+            }
+            .navigator-2 .f-pr {
+                width: 1100px;
+                height: 34px;
+                margin: 0 auto;
+            }
+            .navigator-2 ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                height: 100%;
+                margin-left: 180px;
+            }
+            .navigator-2 li {
+                display: inline-block;
+                height: 100%;
+            }
+            .navigator-2 li a {
+                float: left;
+                height: 35px;
+                text-decoration: none;
+                color: white;
+                position: relative;
+            }
+            .navigator-2 li a sub {
+                width: 10px;
+                height: 10px;
+                float: right;
+                background-repeat: no-repeat;
+                background-image: url(white-r-icon@3x.png);
+                background-size: 1em;
+            }
+            .navigator-2 li p {
+                margin: 7px 17px 0;
+                padding: 0 13px;
+                font-size: 12px;
+                line-height: 21px;
+                border-radius: 10px;
+            }
+            .navigator-2 li:nth-child(1) p {
+                background-color: rgb(51, 50, 50, 0.3);
+            }
+            .navigator-2 li p:hover {
+                background-color: rgb(51, 50, 50, 0.3);
             }
             .wrap {
                 position: relative;
@@ -899,9 +980,52 @@
                 <span><p>登录</p></span>
                 <span class="return"><a href="#">x</a></span>
             </div>
-            <div class="content"></div>
+            <div class="content">
+                <div class="f-cb">
+                    <div class="phone"></div>
+                    <div class="qr"></div>
+                </div>
+                <div class="otherway">
+                    <a href="">选择其他登录方式 </a>
+                </div>
+            </div>
         </div>
-        <div class="navigator-2"></div>
+        <div class="navigator-2">
+            <div class="f-pr">
+                <ul>
+                    <li>
+                        <a href="">
+                            <p>推荐</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>歌单<sub></sub></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>主播电台</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>歌手</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>新歌上架</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="back-rolling-picture"></div>
     </div>
     <div class="container ">
@@ -982,7 +1106,7 @@
                     </script>
                     <span class="rolling-picture-2">
                         <a class="download" href=""></a>
-                    </span>
+                        </span>
                 </div>
             </div>
             <div class="main">
