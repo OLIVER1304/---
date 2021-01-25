@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一秒沉醉 • 欧美迷情仙女嗓</title>
+    <link rel="stylesheet" href="./bootstrop/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+        
+        .container {
+            width: 1100px;
+            height: 100%;
+        }
+        
+        .navigator {
+            width: 100%;
+            height: 105px;
+            border: 0px solid transparent;
+        }
+        
+        .navigator-1 {
+            background-color: #242424;
+            width: 100%;
+            height: 70px;
+            border: 0px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        [class^=box] {
+            height: 70px;
+            border: 1px solid transparent;
+            text-align: center;
+            color: #b2bec3;
+        }
+        
+        .navigator-1 a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #dfe6e9;
+        }
+        
+        .navigator-1 ul {
+            width: 610px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navigator-1 li {
+            position: relative;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            font-size: 13px;
+            width: 90px;
+            height: 70px;
+            line-height: 70px;
+            display: inline-block;
+        }
+        
+        .navigator-1 li:nth-child(3),
+        .navigator-1 li:nth-child(4) {
+            width: 70px;
+        }
+        
+        .cor {
+            position: absolute;
+            width: 15px;
+            height: 5px;
+            left: 40px;
+            bottom: 0px;
+            background-image: url(topbar.png);
+            background-repeat: no-repeat;
+            background-position: -225px 0;
+        }
+        
+        .hot {
+            background-image: url(topbar.png);
+            background-repeat: no-repeat;
+            background-position: -190px 0px;
+            float: right;
+            width: 30px;
+            height: 15px;
+            display: block;
+            position: absolute;
+            top: 17px;
+            right: -25px;
+        }
+        
+        .navigator-1 .active {
+            background-color: black;
+        }
+        
+        .box1 {
+            width: 176px;
+            padding: 0ch;
+            margin: 0px;
+            background-image: url(topbar.png);
+            background-repeat: no-repeat;
+        }
+        
+        .box1 a {
+            line-height: 70px;
+            font-size: 25px;
+            text-indent: -9999px;
+        }
+        
+        .navigator-1 li:hover {
+            background-color: black;
+        }
+        
+        .wrapper {
+            position: relative;
+            width: 158px;
+            float: left;
+            font-size: 12px;
+        }
+        
+        i {
+            margin-top: 8px;
+            margin-left: 3px;
+        }
+        
+        i.fa {
+            position: absolute;
+        }
+        
+        .wrapper input {
+            height: 30px;
+            width: 158px;
+            border-radius: 15px;
+            outline: none;
+            border: none;
+            margin-top: 0px;
+            padding-left: 22px;
+        }
+        
+        .wrapper input::before {
+            display: none;
+        }
+        
+        .box3 a {
+            width: 90px;
+            border: 1px solid #787878;
+            line-height: 29px;
+            border-radius: 15px;
+            margin-left: 10px;
+            margin-top: 19px;
+            font-size: 13px;
+        }
+        
+        .box3 a:hover {
+            background-color: black;
+        }
+        
+        .box4 {
+            width: 50px;
+            line-height: 70px;
+        }
+        
+        .box4 a {
+            color: #787878;
+            font-size: 12px;
+        }
+        
+        .dl {
+            position: fixed;
+            top: 30%;
+            left: 37%;
+            width: 520px;
+            height: 350px;
+            z-index: 9999;
+            color: white;
+            border-radius: 5px;
+            box-shadow: rgb(51, 50, 50) 0 0 20px 2px;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .dl:target {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .dl .head {
+            width: 100%;
+            height: 40px;
+            background-color: #2d2d2d;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .dl .head p {
+            float: left;
+            width: 50px;
+            margin: 10px 0 0 15px;
+        }
+        
+        .dl .head .return {
+            float: right;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .dl .head .return a {
+            text-decoration: none;
+            color: #787878;
+            font-size: 25px;
+        }
+        
+        .dl .content {
+            width: 100%;
+            height: 310px;
+            background-color: #fff;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .dl .content .f-cb {
+            width: 100%;
+            height: 85%;
+            padding: 20px 0px;
+        }
+        
+        .dl .content .phone {
+            float: left;
+            margin-left: 101px;
+            width: 125px;
+            height: 220px;
+            background-image: url(qr_guide.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .dl .content .qr {
+            height: 220px;
+            width: 150px;
+            float: left;
+            margin-left: 40px;
+            border: 0.5px solid pink;
+        }
+        
+        .dl .content .otherway {
+            width: 120px;
+            height: 30px;
+            margin: 0 auto;
+            border: 1px solid grey;
+            border-radius: 20px;
+        }
+        
+        .dl .content .otherway a {
+            display: block;
+            width: 120px;
+            height: 30px;
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+            text-align: center;
+            line-height: 28px;
+        }
+        
+        .navigator-2 {
+            width: 100%;
+            height: 35px;
+            background-color: #C20C0C;
+            border-bottom: 1px solid #a40011;
+        }
+        
+        .navigator-2 .f-pr {
+            width: 1100px;
+            height: 34px;
+            margin: 0 auto;
+        }
+        
+        .navigator-2 ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 100%;
+            margin-left: 180px;
+        }
+        
+        .navigator-2 li {
+            display: inline-block;
+            height: 100%;
+        }
+        
+        .navigator-2 li a {
+            float: left;
+            height: 35px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+        }
+        
+        .navigator-2 li a sub {
+            width: 10px;
+            height: 10px;
+            float: right;
+            background-repeat: no-repeat;
+            background-image: url(white-r-icon@3x.png);
+            background-size: 1em;
+        }
+        
+        .navigator-2 li p {
+            margin: 7px 17px 0;
+            padding: 0 13px;
+            font-size: 12px;
+            line-height: 21px;
+            border-radius: 10px;
+        }
+        
+        .navigator-2 li p:hover {
+            background-color: rgb(51, 50, 50, 0.3);
+        }
+        
+        .main {
+            margin: 0 auto;
+            padding: 0px;
+            width: 90%;
+            height: 1200px;
+            border: 1px solid red;
+            display: flex;
+        }
+        
+        .main-1 {
+            height: 800px;
+            width: 750px;
+            padding: 47px 30px 40px 39px;
+            border: 0.5px solid #d3d3d3;
+        }
+        
+        .main-1 .top {
+            width: 100%;
+            position: relative;
+        }
+        
+        .main-1 .top .pic {
+            float: left;
+            margin: 0px -220px 0px 0px;
+        }
+        
+        .main-1 .top .pic img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .main-1 .top .pic .msk {
+            position: absolute;
+            width: 208px;
+            height: 208px;
+            background-image: url(coverall.png);
+            background-repeat: no-repeat;
+            background-position: 0px -1285px;
+            top: -4px;
+            left: -4px;
+        }
+        
+        .main-1 .top .cnt {
+            height: 200px;
+            margin-left: 220px;
+        }
+        
+        .main-1 .top .cnt .cnt1 .labal {
+            width: 54px;
+            height: 24px;
+            display: inline-block;
+            background-image: url(icon.png);
+            background-repeat: no-repeat;
+            background-position: 0 -243px;
+        }
+        
+        .main-1 .top .cnt .cnt1 .labal i {
+            width: 10px;
+            height: 10px;
+            float: right;
+            margin-top: 0px;
+            margin-right: 10px;
+            background-image: url(white-r-icon@3x.png);
+            background-repeat: no-repeat;
+            background-size: 0.7em;
+        }
+        
+        .main-1 .top .cnt .cnt1 p {
+            width: 340px;
+            display: inline-block;
+            margin-bottom: 4px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .main-1 .top .cnt .cnt2 p {
+            font-size: 12px;
+            color: #999;
+            line-height: 50px;
+        }
+        
+        .main-2 {
+            height: 800px;
+            width: 300px;
+            border: 1px solid red;
+        }
+    </style>
+
+    <div class="navigator">
+        <div class="navigator-1">
+            <div class="box1">
+                <a href="">网易云音乐</a>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="">发现音乐</a>
+                    <sub class="cor"></sub>
+                </li>
+                <li class=""><a href="">我的音乐</a></li>
+                <li class=""><a href="">朋友</a></li>
+                <li class=""><a href="">商城</a></li>
+                <li class=""><a href="">音乐人</a></li>
+                <li class="">
+                    <a href="">下载客户端</a>
+                    <sup class="hot"></sup>
+                </li>
+            </ul>
+            <div class="wrapper">
+                <i class="fa fa-search fa-lg"></i>
+                <input type="text" placeholder="音乐/视频/电台/用户">
+            </div>
+            <div class="box3">
+                <a href="">创作者中心</a>
+            </div>
+            <div class="box4">
+                <a href="#dl">登录</a>
+            </div>
+        </div>
+        <div class="dl" id="dl">
+            <div class="head">
+                <span><p>登录</p></span>
+                <span class="return"><a href="#">x</a></span>
+            </div>
+            <div class="content">
+                <div class="f-cb">
+                    <div class="phone"></div>
+                    <div class="qr"></div>
+                </div>
+                <div class="otherway">
+                    <a href="">选择其他登录方式 </a>
+                </div>
+            </div>
+        </div>
+        <div class="navigator-2">
+            <div class="f-pr">
+                <ul>
+                    <li>
+                        <a href="">
+                            <p>推荐</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>歌单<sub></sub></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>主播电台</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>歌手</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>新歌上架</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="container ">
+        <div class="row">
+            <div class="main">
+                <div class="main-1">
+                    <div class="top">
+                        <div class="pic">
+                            <img src="https://p2.music.126.net/Hr8sEJzhAKvKo8x56n-Yhw==/109951165525778915.jpg?param=140y140" alt="">
+                            <span class="msk"></span>
+                        </div>
+                        <div class="cnt">
+                            <div class="cnt1">
+                                <span class="labal"><i></i></span>
+                                <p>一秒沉醉 • 欧美迷情仙女嗓</p>
+                            </div>
+                            <div class="cnt2">
+                                <p>2020-10-17 创建</p>
+                            </div>
+                            <div class="cnt3">
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                            </div>
+                            <div class="cnt4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
