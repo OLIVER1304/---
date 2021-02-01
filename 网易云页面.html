@@ -23,8 +23,33 @@
             background: #f5f5f5;
         }
         
+        .long {
+            position: absolute;
+            width: 100%;
+            z-index: -10;
+        }
+        
+        .long1 {
+            width: 100%;
+            height: 70px;
+            background-color: #242424;
+        }
+        
+        .long2 {
+            width: 100%;
+            height: 35px;
+            background-color: #C20C0C;
+            border-bottom: 1px solid #a40011;
+        }
+        
+        .long3 {
+            width: 100%;
+            height: 285px;
+            background-color: #b2bec3;
+        }
+        
         .container {
-            width: 1100px;
+            width: 1200px;
             height: 100%;
         }
         
@@ -32,6 +57,7 @@
             width: 100%;
             height: 105px;
             border: 0px solid transparent;
+            z-index: 1;
         }
         
         .navigator-1 {
@@ -442,12 +468,12 @@
         }
         
         #gopre {
-            left: 0px;
+            left: 40px;
             outline: none;
         }
         
         #gonext {
-            right: 0px;
+            right: 40px;
             outline: none;
         }
         
@@ -1263,91 +1289,95 @@
             background-position: 6px -65px;
         }
     </style>
-
-    <div class="navigator">
-        <div class="navigator-1">
-            <div class="box1">
-                <a href="">网易云音乐</a>
-            </div>
-            <ul>
-                <li class="active">
-                    <a href="">发现音乐</a>
-                    <sub class="cor"></sub>
-                </li>
-                <li class=""><a href="">我的音乐</a></li>
-                <li class=""><a href="">朋友</a></li>
-                <li class=""><a href="">商城</a></li>
-                <li class=""><a href="">音乐人</a></li>
-                <li class="">
-                    <a href="">下载客户端</a>
-                    <sup class="hot"></sup>
-                </li>
-            </ul>
-            <div class="wrapper">
-                <i class="fa fa-search fa-lg"></i>
-                <input type="text" placeholder="音乐/视频/电台/用户">
-            </div>
-            <div class="box3">
-                <a href="">创作者中心</a>
-            </div>
-            <div class="box4">
-                <a href="#dl">登录</a>
-            </div>
-        </div>
-        <div class="dl" id="dl">
-            <div class="head">
-                <span><p>登录</p></span>
-                <span class="return"><a href="#">x</a></span>
-            </div>
-            <div class="content">
-                <div class="f-cb">
-                    <div class="phone"></div>
-                    <div class="qr"></div>
-                </div>
-                <div class="otherway">
-                    <a href="">选择其他登录方式 </a>
-                </div>
-            </div>
-        </div>
-        <div class="navigator-2">
-            <div class="f-pr">
-                <ul>
-                    <li>
-                        <a href="">
-                            <p>推荐</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>排行榜</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>歌单<sub></sub></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>主播电台</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>歌手</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>新歌上架</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="back-rolling-picture"></div>
+    <div class="long">
+        <div class="long1"></div>
+        <div class="long2"></div>
+        <div class="long3"></div>
     </div>
     <div class="container ">
+        <div class="navigator">
+            <div class="navigator-1">
+                <div class="box1">
+                    <a href="">网易云音乐</a>
+                </div>
+                <ul>
+                    <li class="active">
+                        <a href="">发现音乐</a>
+                        <sub class="cor"></sub>
+                    </li>
+                    <li class=""><a href="">我的音乐</a></li>
+                    <li class=""><a href="">朋友</a></li>
+                    <li class=""><a href="">商城</a></li>
+                    <li class=""><a href="">音乐人</a></li>
+                    <li class="">
+                        <a href="">下载客户端</a>
+                        <sup class="hot"></sup>
+                    </li>
+                </ul>
+                <div class="wrapper">
+                    <i class="fa fa-search fa-lg"></i>
+                    <input type="text" placeholder="音乐/视频/电台/用户">
+                </div>
+                <div class="box3">
+                    <a href="">创作者中心</a>
+                </div>
+                <div class="box4">
+                    <a href="#dl">登录</a>
+                </div>
+            </div>
+            <div class="dl" id="dl">
+                <div class="head">
+                    <span><p>登录</p></span>
+                    <span class="return"><a href="#">x</a></span>
+                </div>
+                <div class="content">
+                    <div class="f-cb">
+                        <div class="phone"></div>
+                        <div class="qr"></div>
+                    </div>
+                    <div class="otherway">
+                        <a href="">选择其他登录方式 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigator-2">
+                <div class="f-pr">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p>推荐</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>排行榜</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>歌单<sub></sub></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>主播电台</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>歌手</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>新歌上架</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="back-rolling-picture"></div>
+        </div>
         <div class="row">
             <div class="wrap">
                 <button class="btn" id="gopre">

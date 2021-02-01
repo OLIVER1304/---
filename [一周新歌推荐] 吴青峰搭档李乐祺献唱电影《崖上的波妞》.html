@@ -15,6 +15,31 @@
             background: #f5f5f5;
         }
         
+        .long {
+            position: absolute;
+            width: 100%;
+            z-index: -10;
+        }
+        
+        .long1 {
+            width: 100%;
+            height: 70px;
+            background-color: #242424;
+        }
+        
+        .long2 {
+            width: 100%;
+            height: 35px;
+            background-color: #C20C0C;
+            border-bottom: 1px solid #a40011;
+        }
+        
+        .long3 {
+            width: 100%;
+            height: 285px;
+            background-color: #b2bec3;
+        }
+        
         .container {
             width: 1100px;
             height: 100%;
@@ -336,13 +361,14 @@
             height: 1200px;
             border-bottom: 1px solid red;
             display: flex;
+            background-image: url(wrap4.png);
+            background-size: contain;
         }
         
         .main-1 {
             height: 800px;
-            width: 750px;
+            width: 783px;
             padding: 47px 30px 40px 39px;
-            border: 0.5px solid #d3d3d3;
         }
         
         .main-1 .top {
@@ -408,7 +434,13 @@
         .main-1 .top .cnt .cnt2 p {
             font-size: 12px;
             color: #999;
-            line-height: 50px;
+            line-height: 40px;
+        }
+        
+        .main-1 .top .cnt .cnt3 {
+            height: 30px;
+            width: 100%;
+            margin-bottom: 15px;
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(1) {
@@ -421,9 +453,27 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(1):hover {
+            background-position: 0 -469px;
+        }
+        
+        .main-1 .top .cnt .cnt3 a:nth-child(1) i {
+            float: left;
+            height: 20px;
+            width: 20px;
+            margin: 3px 0 0 7px;
+            padding-left: 20px;
+            padding-top: 3.5px;
+            font-size: 12px;
+            color: white;
+            font-style: normal;
+            word-break: keep-all;
             background-image: url(button2.png);
             background-repeat: no-repeat;
-            background-position: 0 -469px;
+            background-position: 0 -1619px;
+        }
+        
+        .main-1 .top .cnt .cnt3 a:nth-child(1) i:hover {
+            background-position: -28px -1619px;
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(2) {
@@ -437,8 +487,6 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(2):hover {
-            background-image: url(button2.png);
-            background-repeat: no-repeat;
             background-position: -40px -1588px;
         }
         
@@ -453,8 +501,6 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(3):hover {
-            background-image: url(button2.png);
-            background-repeat: no-repeat;
             background-position: right -1106px;
         }
         
@@ -472,8 +518,6 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(3) i:hover {
-            background-image: url(button2.png);
-            background-repeat: no-repeat;
             background-position: 0 -1063px;
         }
         
@@ -488,8 +532,6 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(4):hover {
-            background-image: url(button2.png);
-            background-repeat: no-repeat;
             background-position: right -1106px;
         }
         
@@ -507,8 +549,6 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(4) i:hover {
-            background-image: url(button2.png);
-            background-repeat: no-repeat;
             background-position: 0 -1268px;
         }
         
@@ -523,8 +563,6 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(5):hover {
-            background-image: url(button2.png);
-            background-repeat: no-repeat;
             background-position: right -1106px;
         }
         
@@ -542,8 +580,6 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(5) i:hover {
-            background-image: url(button2.png);
-            background-repeat: no-repeat;
             background-position: 0 -2805px;
         }
         
@@ -558,8 +594,6 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(6):hover {
-            background-image: url(button2.png);
-            background-repeat: no-repeat;
             background-position: right -1106px;
         }
         
@@ -577,15 +611,88 @@
         }
         
         .main-1 .top .cnt .cnt3 a:nth-child(6) i:hover {
+            background-position: 0 -1508px;
+        }
+        
+        .main-1 .top .cnt .cnt4 {
+            height: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .main-1 .top .cnt .cnt4 p {
+            float: left;
+            margin-right: 5px;
+            line-height: 22px;
+            font-size: 12px;
+            font-weight: normal;
+            color: rgb(102, 102, 102);
+        }
+        
+        .main-1 .top .cnt .cnt4 a {
+            height: 20px;
+            width: 32px;
+            text-decoration: none;
+            float: left;
+            margin: 0px 6px;
             background-image: url(button2.png);
             background-repeat: no-repeat;
-            background-position: 0 -1508px;
+            background-size: 12em;
+            background-position: right -1400px;
+        }
+        
+        .main-1 .top .cnt .cnt4 a:hover {
+            background-position: right -1354.3px;
+        }
+        
+        .main-1 .top .cnt .cnt4 a i {
+            font-size: 10px;
+            font-style: normal;
+            line-height: 20px;
+            float: left;
+            padding-left: 6px;
+            margin: 0px;
+            color: rgb(102, 102, 102);
+            background-image: url(button2.png);
+            background-repeat: no-repeat;
+            background-size: 17em;
+            background-position: 0px -1394.5px;
+        }
+        
+        .main-1 .top .cnt .cnt4 a i:hover {
+            background-position: 0px -1348.9px;
+        }
+        
+        .main-1 .top .cnt .cnt5 .p1-1 {
+            display: none;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .main-1 .top .cnt .cnt5 .p1-2 {
+            display: block;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .main-1 .top .cnt .cnt5 .p2-1 {
+            display: block;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .main-1 .top .cnt .cnt5 .p2-2 {
+            display: none;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .main-1 .top .cnt .cnt5 a {
+            float: right;
         }
         
         .main-2 {
             height: 800px;
             width: 300px;
-            border-right: 0.5px solid #d3d3d3;
         }
         
         .end {
@@ -735,91 +842,93 @@
             background-position: 6px -65px;
         }
     </style>
-
-    <div class="navigator">
-        <div class="navigator-1">
-            <div class="box1">
-                <a href="">网易云音乐</a>
-            </div>
-            <ul>
-                <li class="active">
-                    <a href="">发现音乐</a>
-                    <sub class="cor"></sub>
-                </li>
-                <li class=""><a href="">我的音乐</a></li>
-                <li class=""><a href="">朋友</a></li>
-                <li class=""><a href="">商城</a></li>
-                <li class=""><a href="">音乐人</a></li>
-                <li class="">
-                    <a href="">下载客户端</a>
-                    <sup class="hot"></sup>
-                </li>
-            </ul>
-            <div class="wrapper">
-                <i class="fa fa-search fa-lg"></i>
-                <input type="text" placeholder="音乐/视频/电台/用户">
-            </div>
-            <div class="box3">
-                <a href="">创作者中心</a>
-            </div>
-            <div class="box4">
-                <a href="#dl">登录</a>
-            </div>
-        </div>
-        <div class="dl" id="dl">
-            <div class="head">
-                <span><p>登录</p></span>
-                <span class="return"><a href="#">x</a></span>
-            </div>
-            <div class="content">
-                <div class="f-cb">
-                    <div class="phone"></div>
-                    <div class="qr"></div>
-                </div>
-                <div class="otherway">
-                    <a href="">选择其他登录方式 </a>
-                </div>
-            </div>
-        </div>
-        <div class="navigator-2">
-            <div class="f-pr">
-                <ul>
-                    <li>
-                        <a href="">
-                            <p>推荐</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>排行榜</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>歌单<sub></sub></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>主播电台</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>歌手</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>新歌上架</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
+    <div class="long">
+        <div class="long1"></div>
+        <div class="long2"></div>
     </div>
     <div class="container ">
+        <div class="navigator">
+            <div class="navigator-1">
+                <div class="box1">
+                    <a href="">网易云音乐</a>
+                </div>
+                <ul>
+                    <li class="active">
+                        <a href="">发现音乐</a>
+                        <sub class="cor"></sub>
+                    </li>
+                    <li class=""><a href="">我的音乐</a></li>
+                    <li class=""><a href="">朋友</a></li>
+                    <li class=""><a href="">商城</a></li>
+                    <li class=""><a href="">音乐人</a></li>
+                    <li class="">
+                        <a href="">下载客户端</a>
+                        <sup class="hot"></sup>
+                    </li>
+                </ul>
+                <div class="wrapper">
+                    <i class="fa fa-search fa-lg"></i>
+                    <input type="text" placeholder="音乐/视频/电台/用户">
+                </div>
+                <div class="box3">
+                    <a href="">创作者中心</a>
+                </div>
+                <div class="box4">
+                    <a href="#dl">登录</a>
+                </div>
+            </div>
+            <div class="dl" id="dl">
+                <div class="head">
+                    <span><p>登录</p></span>
+                    <span class="return"><a href="#">x</a></span>
+                </div>
+                <div class="content">
+                    <div class="f-cb">
+                        <div class="phone"></div>
+                        <div class="qr"></div>
+                    </div>
+                    <div class="otherway">
+                        <a href="">选择其他登录方式 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigator-2">
+                <div class="f-pr">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p>推荐</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>排行榜</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>歌单<sub></sub></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>主播电台</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>歌手</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>新歌上架</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="main">
                 <div class="main-1">
@@ -837,15 +946,79 @@
                                 <p>2020-10-17 创建</p>
                             </div>
                             <div class="cnt3">
-                                <a href=""></a>
+                                <a href=""><i>播放</i></a>
                                 <a href=""></a>
                                 <a href=""><i>(2043)</i></a>
                                 <a href=""><i>(45)</i></a>
                                 <a href=""><i>下载</i></a>
                                 <a href=""><i>(37)</i></a>
                             </div>
-                            <div class="cnt4"></div>
+                            <div class="cnt4">
+                                <p>标签:</p>
+                                <a href=""><i>华语</i></a>
+                                <a href=""><i>流行</i></a>
+                                <a href=""><i>思念</i></a>
+                            </div>
+                            <div id="cnt5" class="cnt5">
+                                <div class="p1-1"><b>介绍：</b>
+                                    <br>曲折的故事终会有一个圆满的结局
+                                    <br> 至少人们看见了墨色宇宙中璀璨的星辉
+                                    <br> 远方的山川开始变得温柔
+                                    <br> 大概一切都会好起来
+                                    <br> 你如流星从天空滑过
+                                    <br> 我站在彼端凝望
+                                    <br> 你留光明于天际
+                                    <br> 我目送你远去
+                                    <br> 或许有一天我会再次祝愿你
+                                    <br>不要被黑夜束缚
+                                    <br> 变得更加温暖与热烈
+                                    <br>现在是冬日
+                                    <br> 晚风轻踩着云朵
+                                    <br> 月亮在贩售快乐
+                                    <br>我合十双手
+                                    <br>真诚祝愿
+                                    <br> 你从银河背后靠近我
+                                    <br> 我与星辉一同为你沦陷
+                                    <br>“我爱你 如鲸向海 如鸟投林 不可避免 退无可退”
+                                </div>
+                                <div class="p1-2"><b>介绍：</b>
+                                    <br>曲折的故事终会有一个圆满的结局
+                                    <br> 至少人们看见了墨色宇宙中璀璨的星辉
+                                    <br> 远方的山川开始变得温柔
+                                    <br> 大概一切都会好起来
+                                    <br> 你如流星从天空滑过
+                                    <br> 我站在彼端凝望
+                                    <br> 你留光明于天际
+                                    <br> 我目送你远去
+                                    <br> 或许有一天我会再次祝愿...
+                                </div>
+                                <a id=a1 href="javascript:;">展开</a>
+                                <script>
+                                    window.onload = function() {
+                                        var p1 = document.getElementsByClassName('p1-1')[0];
+                                        var p2 = document.getElementsByClassName('p1-2')[0];
+                                        var cnt5 = document.getElementById('cnt5');
+                                        var a = cnt5.getElementsByTagName('a')[0];
+                                        var oopen = true;
+                                        a.onclick = function() {
+                                            if (oopen == true) {
+                                                p1.className = 'p2-1';
+                                                p2.className = 'p2-2';
+                                                a.innerHTML = '收起';
+                                            } else {
+                                                p1.className = 'p1-1';
+                                                p2.className = 'p1-2';
+                                                a.innerHTML = '展开';
+                                            }
+                                            oopen = !oopen;
+                                        }
+                                    }
+                                </script>
+                            </div>
                         </div>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
                 <div class="main-2"></div>
