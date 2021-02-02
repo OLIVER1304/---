@@ -398,7 +398,6 @@
         }
         
         .main-1 .top .cnt {
-            height: 200px;
             margin-left: 220px;
         }
         
@@ -688,11 +687,78 @@
         
         .main-1 .top .cnt .cnt5 a {
             float: right;
+            display: block;
+        }
+        
+        .main-1 .head {
+            position: relative;
+            margin-top: 27px;
+            height: 33px;
+            border: 2px solid #b33939;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            font-size: 10px;
+        }
+        
+        .main-1 h3 {
+            float: left;
+            margin: 0px;
+            line-height: 28px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        
+        .main-1 .head .sub {
+            float: left;
+            margin-top: 10px;
+            margin-left: 20px;
+            color: #999;
+        }
+        
+        .main-1 .head .times {
+            float: right;
+            margin-top: 8px;
+            font-size: 12px
+        }
+        
+        .main-1 .head .times span {
+            color: #c20c0c;
+            font-weight: bolder;
+            font-size: 12px
+        }
+        
+        .main-1 .head .link {
+            float: right;
+            margin-top: 7px;
+            margin-right: 20px;
+            font-size: 12px;
+            line-height: 19px;
+        }
+        
+        .main-1 .head .link i {
+            width: 16px;
+            height: 16px;
+            float: left;
+            margin: 0;
+            background-image: url(icon.png);
+            background-repeat: no-repeat;
+            background-position: 0;
         }
         
         .main-2 {
             height: 800px;
             width: 300px;
+        }
+        
+        .end-background {
+            width: 100%;
+            height: 180px;
+            background: #f2f2f2;
+            border-top: 1px solid #d3d3d3;
+            position: absolute;
+            top: 1915px;
+            z-index: -999;
         }
         
         .end {
@@ -703,6 +769,7 @@
             border-top: 1px solid #d3d3d3;
             height: 180px;
             width: 100%;
+            z-index: 1;
         }
         
         .end .content {
@@ -1018,67 +1085,80 @@
                         </div>
                     </div>
                     <div>
-
+                        <div class="head">
+                            <h3>
+                                <span>歌单列表</span>
+                            </h3>
+                            <span class="sub">
+                                <span id="count">20</span>首歌
+                            </span>
+                            <div class="times">播放：<span>99100095</span>次</div>
+                            <div class="link">
+                                <i></i>
+                                <a href="">生成外链播放器</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="main-2"></div>
             </div>
         </div>
-    </div>
-    <div class="end">
-        <div class="content">
-            <div class="left">
-                <p class="service">
-                    <a href="">服务条款</a>
-                    <span class="bar">|</span>
-                    <a href="">隐私政策</a>
-                    <span class="bar">|</span>
-                    <a href="">儿童隐私政策</a>
-                    <span class="bar">|</span>
-                    <a href="">版权投诉指引</a>
-                    <span class="bar">|</span>
-                    <a href="">意见反馈</a>
-                    <span class="bar">|</span>
-                </p>
-                <p>
-                    <span>网易公司版权所有©1997-2021</span>
-                    <span class="aaa">杭州乐读科技有限公司运营：</span>
-                    <a href="">浙网文[2018]3506-263号</a>
-                </p>
-                <p>
-                    <span>违法和不良信息举报电话：0571-89853516</span>
-                    <span class="aaa">举报邮箱：</span>
-                    <a href="">ncm5990@163.com</a>
-                </p>
-                <p>
-                    <a href="">粤B2-20090191-18  工业和信息化部备案管理系统网站 </a>
-                    <a href=""> 浙公网安备 33010902002564号</a>
-                </p>
+        <div class="end">
+            <div class="content">
+                <div class="left">
+                    <p class="service">
+                        <a href="">服务条款</a>
+                        <span class="bar">|</span>
+                        <a href="">隐私政策</a>
+                        <span class="bar">|</span>
+                        <a href="">儿童隐私政策</a>
+                        <span class="bar">|</span>
+                        <a href="">版权投诉指引</a>
+                        <span class="bar">|</span>
+                        <a href="">意见反馈</a>
+                        <span class="bar">|</span>
+                    </p>
+                    <p>
+                        <span>网易公司版权所有©1997-2021</span>
+                        <span class="aaa">杭州乐读科技有限公司运营：</span>
+                        <a href="">浙网文[2018]3506-263号</a>
+                    </p>
+                    <p>
+                        <span>违法和不良信息举报电话：0571-89853516</span>
+                        <span class="aaa">举报邮箱：</span>
+                        <a href="">ncm5990@163.com</a>
+                    </p>
+                    <p>
+                        <a href="">粤B2-20090191-18  工业和信息化部备案管理系统网站 </a>
+                        <a href=""> 浙公网安备 33010902002564号</a>
+                    </p>
+                </div>
+                <ul class="link">
+                    <li>
+                        <a href=""></a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <span></span>
+                    </li>
+                </ul>
             </div>
-            <ul class="link">
-                <li>
-                    <a href=""></a>
-                    <span></span>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <span></span>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <span></span>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <span></span>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <span></span>
-                </li>
-            </ul>
         </div>
     </div>
+    <div class="end-background"></div>
 </body>
 
 </html>
