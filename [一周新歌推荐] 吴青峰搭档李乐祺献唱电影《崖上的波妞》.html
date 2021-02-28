@@ -13,6 +13,12 @@
 <body>
     <style>
         body {
+            width: 100%;
+            height: 100%;
+            right: 0;
+            border: 0;
+            word-wrap: break-word;
+            word-break: break-word;
             background: #f5f5f5;
         }
         
@@ -361,7 +367,6 @@
             margin: 0 auto;
             padding: 0px;
             width: 83%;
-            border-bottom: 1px solid red;
             display: flex;
             background-image: url(wrap4.png);
             background-size: contain;
@@ -885,7 +890,7 @@
         
         .main-1 .comment .post-comments {
             width: 100%;
-            height: 200px;
+            height: 130px;
             position: relative;
         }
         /* ---------------------------------------------------------------------------------------评论区*/
@@ -955,41 +960,44 @@
             outline: none;
         }
         
-        .main-1 .comment .post-comments .emoji {
+        .main-1 .comment .interact {
+            height: 30px;
+            margin-top: 15px;
+        }
+        
+        .main-1 .comment .emoji {
             width: 20px;
             height: 23px;
             float: left;
-            margin: 10px 0px;
+            margin-right: 5px;
             background-image: url(icon.png);
             background-repeat: no-repeat;
             background-position: -40px -487px;
         }
         
-        .main-1 .comment .post-comments .at {
+        .main-1 .comment .at {
             width: 20px;
             height: 23px;
             float: left;
-            margin: 10px 5px;
             background-image: url(icon.png);
             background-repeat: no-repeat;
             background-position: -58px -487px;
         }
         
-        .main-1 .comment .post-comments .count {
+        .main-1 .comment .count {
             width: 30px;
             height: 20px;
             float: right;
             font-size: 13px;
             color: #cdcdcd;
-            margin-top: 15px;
             margin-right: 5px;
+            margin-top: 5px;
         }
         
-        .main-1 .comment .post-comments .cmt {
+        .main-1 .comment .cmt {
             width: 46px;
             height: 25px;
             float: right;
-            margin: 10px 0px;
             text-align: center;
             font-size: 12px;
             line-height: 25px;
@@ -999,8 +1007,89 @@
             background-position: -84px -64px;
         }
         
-        .main-1 .comment .post-comments .cmt:hover {
+        .main-1 .comment .cmt:hover {
             background-position: -84px -94px;
+        }
+        
+        .main-1 .comment .comment-list .head-title {
+            width: 100%;
+            height: 30px;
+        }
+        
+        .main-1 .comment .comment-list .head-title h6 {
+            font-size: 12px;
+            font-weight: bolder;
+            margin: 0;
+            line-height: 30px;
+        }
+        
+        .main-1 .comment .comment-list .c-l {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .main-1 .comment .comment-list .c-l li {
+            border-top: 1px solid #ccc;
+        }
+        
+        .main-1 .comment .comment-list .c-l .u-com {
+            padding: 15px 0;
+        }
+        
+        .main-1 .comment .comment-list .c-l .u-com .head,
+        .main-1 .comment .comment-list .c-l .u-com img {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 0;
+        }
+        
+        .main-1 .comment .comment-list .c-l .cntwrap {
+            margin-left: 60px;
+        }
+        
+        .main-1 .comment .comment-list .c-l .rp {
+            margin-top: 15px;
+            height: 20px;
+        }
+        
+        .main-1 .comment .comment-list .c-l .date {
+            float: left;
+        }
+        
+        .main-1 .comment .comment-list .c-l .reply {
+            float: right;
+            display: block;
+            line-height: 25px;
+            font-size: 12px;
+        }
+        
+        .main-1 .comment .comment-list .c-l .rp span {
+            float: right;
+            margin: 0 10px;
+        }
+        
+        .main-1 .comment .comment-list .c-l .m-quk {
+            margin-left: 60px;
+            margin-bottom: 15px;
+            border: 1px solid #d9d9d9;
+            border-radius: 2px;
+            display: none;
+        }
+        
+        .main-1 .comment .comment-list .c-l .m-quk .iner {
+            padding: 15px;
+        }
+        
+        .main-1 .comment .comment-list .c-l .m-quk .iner textarea {
+            width: 100%;
+            height: 33px;
+            resize: none;
+            position: relative;
+            border: 1px solid #ccc;
+            outline: none;
+            overflow: hidden;
         }
         
         .main-2 {
@@ -1069,16 +1158,6 @@
             line-height: 50px;
             color: white;
             text-decoration: none;
-        }
-        
-        .end-background {
-            width: 100%;
-            height: 180px;
-            background: #f2f2f2;
-            border-top: 1px solid #d3d3d3;
-            position: absolute;
-            top: 1915px;
-            z-index: -999;
         }
         
         .mpler-1 {
@@ -1219,66 +1298,63 @@
         }
         
         .end {
+            position: relative;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #f2f2f2;
+            height: 172px;
+            overflow: hidden;
             border-top: 1px solid #d3d3d3;
-            height: 180px;
-            width: 100%;
-            z-index: 1;
+            background: #f2f2f2;
         }
         /* ---------------------------------------------------------------------------------------end */
         
         .end .content {
             width: 1000px;
-            height: 100%;
+            margin: 0 auto;
         }
         
-        .end .content .left {
-            height: 100%;
-            width: 50%;
+        .end .content-1 {
+            width: 100%;
+            height: 120px;
+        }
+        
+        .end .content-1 .left {
             float: left;
-            padding-top: 20px;
+            width: 520px;
+            padding-top: 15px;
+            line-height: 24px;
         }
         
-        .end .content .left .service a {
+        .end .content-1 .left .service a {
             color: #999;
         }
         
-        .end .content .left .service .bar {
+        .end .content-1 .left .service .bar {
             margin-left: 8px;
             margin-right: 8px;
         }
         
-        .end .content .left p {
+        .end .content-1 .left p {
             font-size: 12px;
             color: #666;
             line-height: 15px;
         }
         
-        .end .content .left p .aaa {
+        .end .content-1 .left p .aaa {
             margin-left: 10px;
         }
         
-        .end .content .left a {
+        .end .content-1 .left a {
             color: #666;
         }
         
-        .end .content {
-            height: 100%;
-            width: 980px;
-            float: right;
-        }
-        
-        .end .content .link {
+        .end .content-1 .link {
             list-style: none;
             float: right;
             margin-top: 33px;
             padding-left: 0px;
         }
         
-        .end .content .link li {
+        .end .content-1 .link li {
             width: 60px;
             height: 80px;
             float: left;
@@ -1286,11 +1362,11 @@
             text-align: center;
         }
         
-        .end .content .link li:first-child {
+        .end .content-1 .link li:first-child {
             margin-left: 0px;
         }
         
-        .end .content .link li a {
+        .end .content-1 .link li a {
             display: block;
             height: 60px;
             background-image: url(foot_enter_new.png);
@@ -1298,47 +1374,47 @@
             background-size: 130px;
         }
         
-        .end .content .link li:nth-child(1) a {
+        .end .content-1 .link li:nth-child(1) a {
             background-position: -73px -560px;
         }
         
-        .end .content .link li:nth-child(1) a:hover {
+        .end .content-1 .link li:nth-child(1) a:hover {
             background-position: -73px -624px;
         }
         
-        .end .content .link li:nth-child(2) a {
+        .end .content-1 .link li:nth-child(2) a {
             background-position: -73px -121px;
         }
         
-        .end .content .link li:nth-child(2) a:hover {
+        .end .content-1 .link li:nth-child(2) a:hover {
             background-position: -73px -310px;
         }
         
-        .end .content .link li:nth-child(3) a {
+        .end .content-1 .link li:nth-child(3) a {
             background-position: 0px 3px;
         }
         
-        .end .content .link li:nth-child(3) a:hover {
+        .end .content-1 .link li:nth-child(3) a:hover {
             background-position: 0px -186px;
         }
         
-        .end .content .link li:nth-child(4) a {
+        .end .content-1 .link li:nth-child(4) a {
             background-position: -73px -60px;
         }
         
-        .end .content .link li:nth-child(4) a:hover {
+        .end .content-1 .link li:nth-child(4) a:hover {
             background-position: -73px -249px;
         }
         
-        .end .content .link li:nth-child(5) a {
+        .end .content-1 .link li:nth-child(5) a {
             background-position: 0px -123px;
         }
         
-        .end .content .link li:nth-child(5) a:hover {
+        .end .content-1 .link li:nth-child(5) a:hover {
             background-position: 0px -312px;
         }
         
-        .end .content .link li span {
+        .end .content-1 .link li span {
             display: block;
             width: 60px;
             height: 20px;
@@ -1347,23 +1423,23 @@
             background-size: 150px;
         }
         
-        .end .content .link li:nth-child(1) span {
+        .end .content-1 .link li:nth-child(1) span {
             background-position: 0 -100px;
         }
         
-        .end .content .link li:nth-child(2) span {
+        .end .content-1 .link li:nth-child(2) span {
             background-position: 8px -83px;
         }
         
-        .end .content .link li:nth-child(3) span {
+        .end .content-1 .link li:nth-child(3) span {
             background-position: 9px 6px;
         }
         
-        .end .content .link li:nth-child(4) span {
+        .end .content-1 .link li:nth-child(4) span {
             background-position: 9px -47px;
         }
         
-        .end .content .link li:nth-child(5) span {
+        .end .content-1 .link li:nth-child(5) span {
             background-position: 6px -65px;
         }
     </style>
@@ -2053,14 +2129,15 @@
                                     <em class="arrline">◆</em>
                                     <span class="arrclr">◆</span>
                                 </div>
-                                <textarea name="" id="" cols="20" rows="20" placeholder="评论" onKeyUp="javascript:checkWord(this);" onMouseDown="javascript:checkWord(this);"></textarea>
-                                <div>
+                                <textarea name="" id="ta" cols="20" rows="20" placeholder="评论" onKeyUp="javascript:checkWord(this);" onMouseDown="javascript:checkWord(this);"></textarea>
+                                <div class="interact">
                                     <div class="emoji"></div>
                                     <div class="at"></div>
-                                    <div class="cmt">评论</div>
+                                    <div id="cmt" class="cmt">评论</div>
                                     <div class="count">
                                         <span id="wordChecks">160</span>
                                     </div>
+
                                     <script>
                                         var maxstrlen = 160;
 
@@ -2103,6 +2180,101 @@
                                     </script>
                                 </div>
                             </div>
+                        </div>
+                        <div class="comment-list">
+                            <div class="head-title">
+                                <h6>精彩评论</h6>
+                            </div>
+                            <ul id="c-l" class="c-l">
+                                <li>
+                                    <div class="u-com">
+                                        <div class="head">
+                                            <img src="http://p1.music.126.net/QGLEwwOqTuy-0pMJPyH1QA==/109951163677172693.jpg?param=180y180" alt="">
+                                        </div>
+                                        <div class="cntwrap">
+                                            <div>
+                                                eeeeeeee
+                                            </div>
+                                            <div class="rp">
+                                                <div class="date">昨天12:30</div>
+                                                <a id="reply" class="reply" href="javascript:void(0)">回复</a>
+                                                <span>|</span>
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div id="m-quk" class="m-quk">
+                                            <div class="iner">
+                                                <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
+                                                <div class="interact">
+                                                    <div class="emoji"></div>
+                                                    <div class="at"></div>
+                                                    <div id="cmt" class="cmt">评论</div>
+                                                    <div class="count">
+                                                        <span id="wordChecks">160</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <script>
+                                var cmt = document.getElementById('cmt');
+                                var cl = document.getElementById('c-l');
+                                var ta = document.getElementById('ta');
+                                cmt.onclick = function() {
+                                    var tatx = ta.value;
+                                    if (tatx == "" || tatx == null) {
+                                        alert("评论为空");
+                                        return false
+                                    } else {
+                                        cl.innerHTML = cl.innerHTML +
+                                            '<li>' +
+                                            '<div class="u-com">' +
+                                            '<div class="head">' +
+                                            '<img src="http://p1.music.126.net/QGLEwwOqTuy-0pMJPyH1QA==/109951163677172693.jpg?param=180y180" alt="">' +
+                                            '</div>' +
+                                            '<div class="cntwrap">' +
+                                            '<div>' + tatx + '</div>' +
+                                            '<div class="rp">' +
+                                            '<div class="date">昨天12:30</div>' +
+                                            '<a class="reply" href="javascript:void(0)">回复</a>' +
+                                            '<span>|</span>' +
+                                            '<a href=""></a>' +
+                                            '</div>' +
+                                            '</div>' +
+                                            '</div>' +
+                                            '<div>' +
+                                            '<div id="m-quk" class="m-quk">' +
+                                            '<div class="iner">' +
+                                            '<div><textarea name="" id="" cols="30" rows="10"></textarea></div>' +
+                                            '<div class="interact">' +
+                                            '<div class="emoji"></div>' +
+                                            '<div class="at"></div>' +
+                                            '<div id="cmt" class="cmt">评论</div>' +
+                                            '<div class="count">' +
+                                            '<span id="wordChecks">160</span>' +
+                                            '</div>' +
+                                            '</div>' +
+                                            '</div>' +
+                                            '</div>' +
+                                            '</div></li>'
+                                    }
+                                }
+                                var reply = document.getElementById('reply');
+                                var mquk = document.getElementById('m-quk');
+                                var show = true;
+                                reply.onclick = function() {
+                                    if (show) {
+                                        mquk.style.display = 'block';
+                                    } else {
+                                        mquk.style.display = 'none';
+                                    }
+                                    show = !show
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -2156,8 +2328,12 @@
                 </div>
             </div>
         </div>
-        <div class="end">
-            <div class="content">
+
+    </div>
+
+    <div class="end">
+        <div class="content">
+            <div class="content-1">
                 <div class="left">
                     <p class="service">
                         <a href="">服务条款</a>
@@ -2244,7 +2420,7 @@
             </div>
         </div>
     </div>
-    <div class="end-background"></div>
+
 </body>
 
 </html>
