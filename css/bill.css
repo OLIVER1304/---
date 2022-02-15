@@ -1,0 +1,202 @@
+.bill {
+    width: 100%;
+    height: 555px;
+    border: 0px solid purple;
+}
+
+
+/* ---------------------------------------------------------------------------------------榜单 */
+
+.bill .head {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border: 2px solid #b33939;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.bill .head .billboard {
+    float: left;
+    top: 0px;
+    height: 45px;
+    width: 80px;
+    line-height: 45px;
+    text-align: center;
+    border: 0px solid blue;
+    font-size: 20px;
+    font-weight: normal;
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+    background-position: -225px -149px;
+}
+
+.bill .head .billboard a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.bill .head .more {
+    float: right;
+    height: 45px;
+}
+
+.bill .head .more a {
+    float: left;
+    margin: 14px 5px;
+    color: #666;
+    font-size: 12px;
+}
+
+.bill .head .more i {
+    float: left;
+    width: 15px;
+    height: 10px;
+    margin: 16px 0px;
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+    background-position: 0 -240px;
+}
+
+.bill .content {
+    margin-top: 30px;
+    margin-left: 6px;
+    width: 100%;
+    height: 480px;
+    border: 0px solid rosybrown;
+    background: url(../img/index_bill.png);
+    background-repeat: no-repeat;
+}
+
+.bill .content dl {
+    border: 0px solid blue;
+    float: left;
+    height: 475px;
+    width: 230px;
+}
+
+.bill .content dl dt {
+    border: 0px solid greenyellow;
+    height: 120px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+}
+
+.bill .content .bill-1 {
+    width: 80px;
+    height: 80px;
+    border: 0px solid black;
+    position: relative;
+}
+
+.bill .content .bill-1 img {
+    width: 80px;
+    height: 80px;
+}
+
+.bill .content .bill-1 a {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bill .content .bill-a {
+    width: 116px;
+    height: 50px;
+    border: 0px solid black;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.bill .content .bill-a h5 {
+    margin: 0;
+    color: black;
+    padding-left: 6px;
+}
+
+.bill .content .bill-a a {
+    margin: 0;
+}
+
+.bill .content .bill-a .bt {
+    padding: 0;
+    margin-top: 10px;
+    outline: none;
+}
+
+.bill .content .bill-a .bt a {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+}
+
+.bill .content .bill-a .bt a:first-child {
+    background-position: -265px -200px;
+}
+
+.bill .content .bill-a .bt a:first-child:hover {
+    background-position: -265px -230px;
+}
+
+.bill .content .bill-a .bt a:last-child {
+    background-position: -296px -200px;
+}
+
+.bill .content .bill-a .bt a:last-child:hover {
+    background-position: -296px -230px;
+}
+
+.bill .content .bill-a .bt a:hover {
+    color: #666;
+}
+
+.bill .content dl ol {
+    list-style: none;
+    padding: 0;
+    height: 319px;
+    margin-left: 50px;
+    line-height: 32px;
+}
+
+.bill .content dl li {
+    height: 32px;
+    width: 180px;
+    margin-right: 0px;
+    padding: 0px;
+    border: 0px solid rgb(9, 123, 158);
+    float: right;
+}
+
+.bill .content dl li:hover {
+    background: transparent
+}
+
+.bill .content dl li span {
+    width: 35px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: -32px;
+}
+
+.bill .content dl li .top3 {
+    color: #c23616;
+    float: left;
+    margin-left: -45px;
+}
+
+.bill .content dl li a {
+    width: 180px;
+    height: 32px;
+}

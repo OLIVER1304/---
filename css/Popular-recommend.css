@@ -1,0 +1,166 @@
+.Popular-recommend {
+    width: 100%;
+    height: 537px;
+    border: 0px solid purple;
+}
+
+
+/* ---------------------------------------------------------------------------------------热门推荐 */
+
+.Popular-recommend .head {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border: 2px solid #b33939;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.Popular-recommend .popular {
+    float: left;
+    top: 0px;
+    height: 45px;
+    width: 120px;
+    line-height: 45px;
+    text-align: center;
+    border: 0px solid blue;
+    font-size: 20px;
+    font-weight: normal;
+    background-image: url(index.png);
+    background-repeat: no-repeat;
+    background-position: -225px -149px;
+}
+
+.Popular-recommend .popular a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.Popular-recommend .classification {
+    width: 240px;
+    height: 17px;
+    margin-top: 13px;
+    margin-left: 10px;
+    float: left;
+}
+
+.Popular-recommend .classification a {
+    line-height: 17px;
+    font-size: 12px;
+    color: #666;
+}
+
+.Popular-recommend .classification span {
+    font-size: 10px;
+    margin: 0px 10px;
+    color: #ccc;
+}
+
+.Popular-recommend .more {
+    float: right;
+    height: 45px;
+}
+
+.Popular-recommend .more a {
+    float: left;
+    margin: 14px 5px;
+    color: #666;
+    font-size: 12px;
+}
+
+.Popular-recommend .more i {
+    float: left;
+    width: 15px;
+    height: 10px;
+    margin: 16px 0px;
+    background-image: url(index.png);
+    background-repeat: no-repeat;
+    background-position: 0 -240px;
+}
+
+.Popular-recommend .content {
+    margin-top: 20px;
+    width: 100%;
+    height: 470px;
+    border: 0px solid rosybrown;
+}
+
+.Popular-recommend .content ul {
+    width: 700px;
+    margin: 0;
+    padding: 0;
+}
+
+.Popular-recommend li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    width: 141px;
+    height: 204px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.Popular-recommend li:hover {
+    background-color: transparent;
+}
+
+.Popular-recommend .picture {
+    position: relative;
+    height: 140px;
+    width: 140px;
+}
+
+.Popular-recommend .picture img {
+    width: 140px;
+    height: 140px;
+}
+
+.Popular-recommend .picture .a1 {
+    width: 140px;
+    line-height: 140px;
+}
+
+.Popular-recommend .bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 140px;
+    background-color: rgb(54, 51, 51, 0.5);
+    color: #dfe6e9;
+}
+
+.Popular-recommend .bottom .a2,
+.Popular-recommend .bottom span {
+    border: 0px solid pink;
+    margin: 0px 0px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.Popular-recommend .bottom span p {
+    font-size: 13px;
+}
+
+.Popular-recommend .bottom a {
+    text-decoration: none;
+    color: #dfe6e9;
+    float: right;
+    margin: 5px 5px;
+}
+
+.Popular-recommend .dec a {
+    padding: 3px 5px;
+    font-size: 13px;
+    display: flex;
+    color: black;
+}

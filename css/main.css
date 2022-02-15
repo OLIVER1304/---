@@ -1,0 +1,199 @@
+.main {
+    margin: 0 auto;
+    padding: 0px;
+    width: 1000px;
+    height: 1525px;
+    display: flex;
+}
+
+.main-1 {
+    height: 1525px;
+    width: 750px;
+    border: 0.5px solid #d3d3d3;
+    border-top: none;
+    border-bottom: none;
+}
+
+.main-1-1 {
+    width: 750px;
+    height: 1525px;
+    padding: 20px 20px 40px;
+}
+
+.gap {
+    width: 700px;
+    margin: 0 0 35px;
+}
+
+.main-2 {
+    height: 1525px;
+    width: 250px;
+    border-right: 0.5px solid #d3d3d3;
+}
+
+.main-2 .user-profile {
+    width: 248px;
+    height: 126px;
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+}
+
+.main-2 .user-profile p {
+    padding: 16px 0 16px 0;
+    margin: 0 20px 0 20px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.main-2 .login {
+    display: block;
+    width: 100px;
+    height: 31px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+    background-position: 0 -195px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 31px;
+    font-size: 12px;
+}
+
+.main-2 .login:hover {
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+    background-position: -110px -195px;
+}
+
+.main-2 .singer {
+    margin-top: 20px;
+    height: 455px;
+    width: 250px;
+}
+
+.main-2 .singer .head,
+.main-2 .dj .head {
+    height: 24px;
+    margin: 0 20px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-2 .singer .head span,
+.main-2 .dj .head span {
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.main-2 .singer .head a,
+.main-2 .dj .head a {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    text-decoration: none;
+    color: #787878;
+}
+
+.main-2 .singer ul,
+.main-2 .dj ul {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 14px 20px;
+}
+
+.main-2 .singer li {
+    float: left;
+    width: 210px;
+    height: 62px;
+    background: #fafafa;
+    margin-top: 14px;
+}
+
+.main-2 .singer li a {
+    display: block;
+    height: 62px;
+    width: 210px;
+}
+
+.main-2 .singer ul a span:nth-child(1) {
+    float: left;
+}
+
+.main-2 .singer ul a span:nth-child(2) {
+    float: left;
+    color: #787878;
+    padding-left: 15px;
+    width: 148px;
+}
+
+.main-2 .singer ul a h5 {
+    font-weight: bolder;
+    color: black;
+}
+
+.main-2 .singer ul a span:nth-child(2) p {
+    font-size: 12px;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.main-2 .dj li {
+    float: left;
+    width: 210px;
+    height: 50px;
+}
+
+.main-2 .dj li .pic {
+    float: left;
+    width: 40px;
+}
+
+.main-2 .dj li .info {
+    float: left;
+    margin-left: 10px;
+    width: 160px;
+    line-height: 21px;
+}
+
+.main-2 .dj li .name {
+    font-size: 12px;
+    color: black;
+}
+
+.main-2 .dj li .info p {
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+.main-2 .goback {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(212, 205, 205);
+    position: fixed;
+    right: 390px;
+    bottom: 160px;
+    display: block;
+    border-radius: 10px;
+}
+
+
+/* ---------------------------------------------------------------------------------------回到顶部按钮 */
+
+.main-2 .goback a {
+    display: block;
+    height: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+}

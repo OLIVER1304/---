@@ -1,0 +1,115 @@
+.new-arrival {
+    width: 100%;
+    height: 270px;
+    border: 0px solid purple;
+}
+
+
+/* ---------------------------------------------------------------------------------------新碟上架 */
+
+.new-arrival .head {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border: 2px solid #b33939;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.new-arrival .head .new {
+    float: left;
+    top: 0px;
+    height: 45px;
+    width: 120px;
+    line-height: 45px;
+    text-align: center;
+    border: 0px solid blue;
+    font-size: 20px;
+    font-weight: normal;
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+    background-position: -225px -149px;
+}
+
+.new-arrival .head .new a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.new-arrival .head .more {
+    float: right;
+    height: 45px;
+}
+
+.new-arrival .head .more a {
+    float: left;
+    margin: 14px 5px;
+    color: #666;
+    font-size: 12px;
+}
+
+.new-arrival .head .more i {
+    float: left;
+    width: 15px;
+    height: 10px;
+    margin: 16px 0px;
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+    background-position: 0 -240px;
+}
+
+.new-arrival .content {
+    margin-top: 30px;
+    width: 100%;
+    height: 190px;
+    border: 1px solid #d3d3d3;
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+    background-size: 85em;
+    background-position: -10px -900px;
+}
+
+.new-arrival .content .last,
+.new-arrival .content .next {
+    width: 20px;
+    height: 55px;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 99;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-arrival .content .last:hover,
+.new-arrival .content .next:hover {
+    background-color: rgb(93, 95, 93, 0.5);
+}
+
+.new-arrival .content .last i,
+.new-arrival .content .next i {
+    margin: 0;
+    line-height: 70px;
+    color: gray;
+}
+
+.new-arrival .content .last {
+    float: left;
+}
+
+.new-arrival .content .next {
+    float: right;
+}
+
+.new-arrival .content .content-1 {
+    float: left;
+    margin: 20px 3px;
+    width: 650px;
+    height: 150px;
+    border: 1px solid rosybrown;
+}
